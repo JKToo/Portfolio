@@ -7,25 +7,39 @@ import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import NavBar from "./NavBar";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
-
+import $ from 'jquery';
 
 
 function App() {
-    const location = useLocation();
+    
+    var lZone = $('.left-zone');
+    $(window).on('scroll', function() {
+        lZone.css('margin-top', $(document).scrollTop() + 100);
+    });
     return (
     <Router>
     <div className = "App">
+    <div id="home"></div>
         <AnimatePresence>
         <NavBar />
         <div className="splitScreen">
         <div className="leftPane"><Side/></div>  
         <div className="rightPane">
+       
             <div className="topPane"><Home/></div>
-            <div className="bottomPane"><About/></div>
+      
+       <div id="about">
+         <div className="bottomPane">
+             <About/></div>
+       </div>
         </div>
         </div>
         </AnimatePresence>
     </div>
+   
+   <div id="div2">
+
+   </div>
     </Router>
     )
 }

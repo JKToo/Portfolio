@@ -1,11 +1,23 @@
-import React from 'react';
+import React,{ useEffect }  from 'react';
  import {ReactComponent as WorkIcon} from "./work.svg"
  import {ReactComponent as SchoolIcon} from "./school.svg"
  import timelineElements from "./timeLineElements"
  import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
  import "react-vertical-timeline-component/style.min.css"
+ import { useLocation } from "react-router-dom";
 
 function About() {
+  const location = useLocation();
+  useEffect(()=> {
+    if (location.hash) {
+        let elem = document.getElementById(location.hash.slice(1))
+        if (elem) {
+            elem.scrollIntoView({behavior: "smooth"})
+        }
+    } else {
+    window.scrollTo({top:0,left:0, behavior: "smooth"})
+    }
+}, [location,])
 
  let workIconStyles = {background: "#06D6A0"}
  let schoolIconStyles = {background: "#f9c74f"}

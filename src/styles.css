@@ -23,7 +23,9 @@
     padding: 30px;
 }
 /* NavBar*/
-
+li:hover{
+    cursor: pointer;
+}
 .sidenav-img{
     border-radius: 50%;
     width: 50%;
@@ -46,6 +48,7 @@
     width: 18%;
     margin-left: 2%;
     top: 5%;
+    margin-top: 100px;
 }
 .link-items{
     display: flex;
@@ -63,7 +66,6 @@ body{
     background-color: #21222A;
     color: rgb(8, 8, 8);
    /* background-image: url('bg.jpg') */
-   height: 3000px;
 }
 
 

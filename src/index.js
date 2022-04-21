@@ -5,26 +5,14 @@ import App from "./App"
 import './styles.css';
 import './languages.css'
 import {BrowserRouter} from 'react-router-dom'
+import $ from 'jquery';
 //import reportWebVitals from './reportWebVitals';
 
+var lZone = $('.left-zone');
+$(window).on('scroll', function() {
+    lZone.css('margin-top', $(document).scrollTop() + 100);
+});
 
-
-// function Page() {
-//   return (
-//   <>
-//     <Header />
-//     <Content />
-//   </>
-//   )
-// }
-
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
 
 
 ReactDOM.render(

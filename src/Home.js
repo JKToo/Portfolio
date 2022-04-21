@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect }   from 'react';
 import Typed from 'typed.js';
 import background from './bg.jpg'
 import About from './About.js'
-// import ReactDOM from 'react-dom';
-// import ContentAbout from './ContentAbout';
+ import { useLocation } from "react-router-dom";
 import './styles.css';
 import Content from './Content';
+
 function Home() {
+
+
+
 // Create reference to store the DOM element containing the animation
 const el = React.useRef(null);
 // Create reference to store the Typed instance itself
