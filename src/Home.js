@@ -16,8 +16,9 @@ React.useEffect(() => {
   const options = {
       strings: [
       'Programmer',
-      'Front End Developer ',
-      'Back End Developer'
+      'Web Developer ',
+      'Android Developer',
+      'iOS Developer '
     ],
     typeSpeed: 50,
     backSpeed: 50,
