@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 1920 1080">
+ <defs>
+  <style type="text/css">
+    .fil6 {fill:#FEFEFE}
+    .fil3 {fill:black}
+    .fil0 {fill:#727272}
+    .fil5 {fill:url(#a)}
+    .fil4 {fill:url(#e)}
+    .fil2 {fill:url(#d)}
+    .fil1 {fill:url(#c)}
+    .fil7 {fill:url(#b)}
+  </style>
+  <linearGradient id="a" x1="1575" x2="945.42" y1="708.31" y2="721.69" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#ABABAB" offset="0"/>
+   <stop stop-color="#d3d3d3" offset="1"/>
+  </linearGradient>
+  <linearGradient id="e" x1="319.96" x2="929.35" y1="708.31" y2="721.69" gradientUnits="userSpaceOnUse" xlink:href="#a">
+  </linearGradient>
+  <linearGradient id="d" x1="947.37" x2="947.37" y1="54.67" y2="726.33" gradientUnits="userSpaceOnUse">
+   <stop offset="0"/>
+   <stop stop-color="#727272" offset="1"/>
+  </linearGradient>
+  <linearGradient id="c" x1="947.76" x2="947.76" y1="759.23" y2="866.98" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#9F9F9F" offset="0"/>
+   <stop stop-color="#d3d3d3" offset="1"/>
+  </linearGradient>
+  <linearGradient id="b" x1="948" x2="948" y1="882.52" y2="935.81" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#d3d3d3" offset="0"/>
+   <stop stop-color="#9F9F9F" offset="1"/>
+  </linearGradient>
+ </defs>
+  <path class="fil0" d="m814 876h267c5 11 13 21 23 32s20 21 30 32c8 9 9 16 4 22-4 6-16 9-29 9h-330c-13 0-25-4-28-9-4-6-2-14 6-22l32-32c10-11 19-21 25-32z"/>
+  <path class="fil1" d="m824 751h248c1 21 2 42 3 62 2 21 3 42 6 62h-267c1-21 3-41 5-62s4-42 5-62z"/>
+  <rect class="fil2" x="323" width="1249" height="781" rx="44" ry="44"/>
+  <rect class="fil3" x="325" y="3" width="1246" height="777" rx="44" ry="44"/>
+  <path class="fil4" d="m324 672h624v108h-579c-24 0-44-20-44-44v-64z"/>
+  <path class="fil5" d="m1571 672h-644v108h600c24 0 44-20 44-44v-64z"/>
+  <rect class="fil6" x="370" y="53" width="1157" height="564"/>
+  <path class="fil7" d="m814 873h267c5 11 13 21 23 32s20 21 30 32c8 8 9 16 4 22-4 6-16 9-29 9h-330c-13 0-25-4-28-9-4-6-2-13 6-22l32-32c10-10 19-21 25-32z"/>
+</svg>

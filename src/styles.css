@@ -1,0 +1,125 @@
+/* NavBar*/
+.nav {
+    background-color: #21222A;
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: large;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(203, 199, 199, 0.2);
+    color: aliceblue;
+    top: 0;
+    position: sticky;
+    z-index: 101;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+
+.nav-items > li {
+    padding: 30px;
+}
+/* NavBar*/
+
+
+.sidenav {
+    margin-top: 20%;
+    background-color: rgb(255, 255, 255); /* Black*/
+    color: rgb(0, 0, 0);
+    padding-top: 60px; /* Place content 60px from the top */
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all, 0.35s;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(203, 199, 199, 0.2);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .left-zone {    
+    position: absolute;
+    transition: all, 0.75s;
+    width: 16%;
+    margin-left: 2%;
+}
+  
+.link{
+    background-color: rgba(0, 255, 166, 0.587);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style:solid;
+    
+}
+
+body{
+    background-color: #21222A;
+    color: rgb(8, 8, 8);
+   /* background-image: url('bg.jpg') */
+   height: 3000px;
+}
+
+
+.content{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: inherit
+}
+
+
+.typed{
+    align-items: center;
+    vertical-align: middle;
+    font-size: 30px;
+  }
+
+  .typed .anim{
+    color:rgb(251, 255, 0)
+  }
+
+.center{
+    text-align: center;
+    color:rgb(251, 255, 0);
+    size: 30px;    
+    margin-bottom: 40%;
+}
+
+.centerHeader{
+    margin-top:20%;
+    color:rgb(227, 227, 227);
+    font-size: 70px;
+}
+
+.wrap{
+    margin-right: 100px;
+}
+
+
+.align{
+    display: inline;
+    color:aliceblue;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.splitScreen {
+    display: flex;
+    flex-direction: row;
+}
+.leftPane{
+    width: 20%;
+}
+.rightPane{
+    width: 80%;
+}
+
+
+
+
