@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects"
+import Certificates from "./Certificates"
 import Side from "./Side"
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import NavBar from "./NavBar";
@@ -89,6 +90,9 @@ function App() {
 
             <div style={{paddingTop: 200}} data-aos="fade-up" id="projects">
                 <Projects/>
+            </div>
+            <div style={{paddingTop: 200}} data-aos="fade-up" id="projects">
+                <Certificates/>
             </div>
         </div>
         </div>

@@ -8,6 +8,7 @@ import laundry from './Sources/laundry.png'
 import studypeer from './Sources/studypeer.png'
 import portfolio from './Sources/portfolio.png'
 import html from './Sources/html.png'
+import quizlet from './Sources/quizlet.png'
 import calculator from './Sources/calculator.png'
 import {
     Card,
@@ -26,9 +27,9 @@ function Projects() {
     }, [])
 return (
   <div className='projectbody' style={{height:2000}}>
-    <h1 className='title'>Projects </h1>
+    <h1 className='title'>My Work </h1>
     <div className='layout' data-aos="fade-up" >
-        <a href="https://github.com/JKToo/Group-Website-Project">
+        <a href="https://github.com/JKToo/Laundry-Reservation" target="_blank">
         <Card style={{width: '18rem'}} className="card">
             <CardImg src={laundry} style={{height: 286, width: 288, }}/>
             <CardBlock>
@@ -49,7 +50,7 @@ return (
             </CardFooter>
          </Card>
          </a>
-         <a href="https://github.com/JKToo/Study-Peer-Discord-Bot">
+         <a href="https://github.com/JKToo/Study-Peer-Discord-Bot" target="_blank">
          <Card style={{width: '18rem'}} className="card">
             <CardImg src={studypeer} style={{height: 286, width: 288}}/>
             <CardBlock>
@@ -67,14 +68,15 @@ return (
             </CardFooter>
          </Card>
          </a>
-         <div className='comingSoon'>
+         <a href="https://github.com/JKToo/Portfolio" target="_blank">
          <Card style={{width: '18rem'}} className="card">
             <CardImg src={portfolio} style={{height: 286, width: 288}}/>
             <CardBlock>
             <CardTitle>
                 Portfolio Website
             </CardTitle>
-                Source code for this website
+                Source code for this website <br></br>
+                using React.js
             </CardBlock>
             <hr></hr>
             <CardFooter className="text-xs-center">
@@ -86,7 +88,7 @@ return (
             </div>
             </CardFooter>
          </Card>
-        </div>
+        </a>
     </div>
 
     <br></br><br></br>
@@ -94,7 +96,7 @@ return (
 
 
     <div className='layout'  data-aos="fade-up">
-    <div className='comingSoon'>
+    <a href= "https://github.com/JKToo/Cooking101" target="_blank">
         <Card style={{width: '18rem'}} className="card">
             <CardImg src={cooking101} style={{height: 286, width: 288}}/>
             <CardBlock>
@@ -111,7 +113,7 @@ return (
             </div>
             </CardFooter>
          </Card>
-    </div>
+    </a>
 
         <div className='comingSoon'>
          <Card style={{width: '18rem'}} className="card">
@@ -131,20 +133,20 @@ return (
          </Card>
          </div>
 
-        <a href="https://github.com/JKToo/HTML">
+        <a href="https://github.com/JKToo/Quizlet_API" target="_blank">
          <Card style={{width: '18rem'}} className="card">
-            <CardImg src={html} style={{height: 286, width: 284, marginLeft:2, marginRight:2, marginTop:3}}/>
+            <CardImg src={quizlet} style={{height: 286, width: 284, marginLeft:2, marginRight:2, marginTop:3}}/>
             <CardBlock>
             <CardTitle>
-            HTML/CSS
+            Quizlet API
             </CardTitle>
-           All of my HTML / CSS work <br></br>
-           Includes School projects
+           Developed an API to scrape Quizlet for <br></br>
+           flashcard info and returns in a JSON File
             </CardBlock> <hr></hr>
             <CardFooter className="text-xs-center">
             <div style={{display:'flex', justifyContent:'center', padding:4}}>
-            <div className='html'>HTML</div>
-            <div className='css'>CSS</div>
+            <div className='js'>Javascript</div>
+            <div className='api'>API</div>
             </div>
             </CardFooter>
          </Card>
@@ -157,7 +159,7 @@ return (
   <br></br><br></br>
 
 <div className='layout' data-aos="fade-up" >
-        <a href="https://github.com/JKToo/C-Plus-Plus">
+        <a href="https://github.com/JKToo/C-Plus-Plus" target="_blank">
         <Card style={{width: '18rem'}} className="card">
             <CardImg src={cpp} style={{height: 286, width: 288, }}/>
             <CardBlock>
@@ -174,7 +176,7 @@ return (
             </CardFooter>
          </Card>
          </a>
-         <a href="https://github.com/JKToo/Java">
+         <a href="https://github.com/JKToo/Java" target="_blank">
          <Card style={{width: '18rem'}} className="card">
             <CardImg src={java} style={{height: 286, width: 288}}/>
             <CardBlock>
@@ -193,7 +195,7 @@ return (
          </a>
 
          <div className='comingSoon'>
-             <a href="https://github.com/JKToo/PHP">
+             <a href="https://github.com/JKToo/PHP" target="_blank">
                 <Card style={{width: '18rem'}} className="card">
                     <CardImg src={php} style={{height: 286, width: 288}}/>
                     <CardBlock>
@@ -211,6 +213,32 @@ return (
                 </Card>
             </a>
         </div>
+       
+    </div>
+
+<br></br><br></br>
+
+    <div className='layout' data-aos="fade-up" >
+    <a href="https://github.com/JKToo/HTML" target="_blank">
+         <Card style={{width: '18rem'}} className="card">
+            <CardImg src={html} style={{height: 286, width: 284, marginLeft:2, marginRight:2, marginTop:3}}/>
+            <CardBlock>
+            <CardTitle>
+            HTML/CSS
+            </CardTitle>
+           All of my HTML / CSS work <br></br>
+           Includes School projects
+            </CardBlock> <hr></hr>
+            <CardFooter className="text-xs-center">
+            <div style={{display:'flex', justifyContent:'center', padding:4}}>
+            <div className='html'>HTML</div>
+            <div className='css'>CSS</div>
+            </div>
+            </CardFooter>
+         </Card>
+         </a>
+        
+       
     </div>
   </div>
 );
