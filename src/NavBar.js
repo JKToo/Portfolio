@@ -39,7 +39,7 @@ useEffect(() => {
         <ul className = "nav-items">
         <li> <ScrollIntoView selector= "#home">Home</ScrollIntoView></li>
         <li> <ScrollIntoView selector= "#about">About</ScrollIntoView> </li>
-        <li><Link to = "#div2">Projects</Link></li>
+        <li><ScrollIntoView selector= "#projects">Projects</ScrollIntoView></li>
 
         </ul>
       </nav>

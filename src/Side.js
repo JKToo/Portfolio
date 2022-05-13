@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import React from 'react';
  import "react-vertical-timeline-component/style.min.css"
-import profile from './avatar.jpg';
+import profile from './Sources/avatar.jpg';
 
 function Side() {
   var lZone = $('.left-zone');
@@ -12,37 +12,33 @@ function Side() {
   return (
     <div className="left-zone col-sm-2">
         <div className='sidenav'>
+      <h1 className="playerstat">Player Stats:</h1>
           <img className='sidenav-img' src={profile}></img>
         <h1>Justin Too</h1>
         <div className='link-items'>
-        <div className='link'>LinkedIn</div> <br></br>
-        <div className='link'>Github</div>
-        <div className='link'>Resume</div>
+        <div className='link' style={{backgroundColor:"rgb(36, 222, 219)"}}><a href="https://www.linkedin.com/in/justin-k-too/">LinkedIn</a></div> <br></br>
+        <div className='link' style={{backgroundColor:"rgb(36, 222, 219)"}}><a href="https://github.com/jktoo">Github</a></div>
+        {/* <div className='link'>Resume</div> */}
         </div>
         <br></br>
           <div>
-            <h3>Skills:</h3>
-                <div className='bar'>
-                    <p className = 'bar-cpp' >C++</p>
-                  </div>
-                  <div className='bar'>
-                    <p className = 'bar-html' >HTML/CSS</p>                    
-                </div>
-                <div className='bar'>
-                    <p className = 'bar-js' >Javascript</p>                    
-                </div>
-                <div className='bar'>
-                    <p className = 'bar-php' >PHP/MySQL</p>
-                  </div>
-                  <div className='bar'>
-                    <p className = 'bar-swift' >Swift</p>                    
-                </div>
-                <div className='bar'>
-                    <p className = 'bar-java'>Java</p>
-                  </div>
-                  <div className='bar'>
-                    <p className = 'bar-react'>React</p>                    
-                </div>
+            <div className='stats'>
+              <h2 >Current Age:</h2> 
+              <h3 className = 'statanswers'>24</h3>
+            </div>
+            <div className='stats'>
+            <h2>Location:</h2>
+            <h3 className = 'statanswers'>The Big Apple</h3>
+            </div>
+            <div className='stats'>
+            <h2>Degree:</h2>
+            <h3 className = 'statanswers'>Associates In Computer Science<br></br>Bachelors (Pursuing)</h3>
+            </div>
+            <div className='stats'>
+            <h2>Hobbies:</h2>
+            <h3 className = 'statanswers'>Programming | Gaming</h3>
+            </div>
+            
             </div>
         </div>
     </div>

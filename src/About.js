@@ -1,62 +1,61 @@
 import React,{ useEffect }  from 'react';
- import {ReactComponent as WorkIcon} from "./work.svg"
- import {ReactComponent as SchoolIcon} from "./school.svg"
- import timelineElements from "./timeLineElements"
- import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
  import "react-vertical-timeline-component/style.min.css"
- import { useLocation } from "react-router-dom";
+import emoji from './Sources/emoji.gif'
+
+
 
 function About() {
-  const location = useLocation();
-  useEffect(()=> {
-    if (location.hash) {
-        let elem = document.getElementById(location.hash.slice(1))
-        if (elem) {
-            elem.scrollIntoView({behavior: "smooth"})
-        }
-    } else {
-    window.scrollTo({top:0,left:0, behavior: "smooth"})
-    }
-}, [location,])
-
- let workIconStyles = {background: "#06D6A0"}
- let schoolIconStyles = {background: "#f9c74f"}
-
   return (
-   
-    <div className='split'>
-       <div>
-       <a href="https:/github.com/jktoo"><img src="git.png" alt="github" height="60px" widght="60px" className='align'/></a>
-         <img src="code.png" alt="github" height="60px" widght="60px"  className='align'/>
-       </div>
-       <div>
-       <p className="align"> <a href="https:/github.com/jktoo">Github</a></p>
-       <p className="align">LinkedIn</p>
-       </div>
-      <br></br>
-      <h1 > Timeline</h1>
-      <VerticalTimeline>
-        {timelineElements.map(element => {
-        let isWorkIcon = element.icon === "work";
-          return (
-           <VerticalTimelineElement
-           key={element.key}
-            dateClassName="date"
-            iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-            icon={isWorkIcon ? <WorkIcon/> : <SchoolIcon/>}
-          >
-            <u><h2 className="vertical-timeline-element-title"> {element.title} </h2></u>
-            <i><h3 className = "vertical-timeline-element-subtitle"> {element.role} </h3></i>
-            <h4 className = "vertical-timeline-element-subtitle"> {element.location} </h4>
-            <h5 className="vertical-timeline-element-title"> {element.date} {element.gpa}</h5>
-            
-            
-            <p id='description'> {element.description}</p>
-          </VerticalTimelineElement>
-        );
-      })}
-    </VerticalTimeline>
-    <h1>Test</h1>
+    <div style={{height: 1000}}>
+      <h1  className='header' style={{ outlineColor:'#FFF', fontSize:50}}>Hello! I'm 
+      <img src={emoji} alt="test" className='emoji'/>
+      </h1>
+      <h2 style={{ color:'white', fontSize:40, paddingLeft: 200}}>Justin Too</h2>
+      <div className='splitScreenAbout font bg' style={{paddingLeft: 200}}>
+        <div className='leftPaneAbout' style={{paddingTop: 70}}>
+        I currently attend CUNY Hunter College, pursuing a <br></br>Bachelors in Arts Degree in Computer Science. <br></br>
+        I have a love for technology and hope <br></br>to one day make a difference through it.<br></br>
+        I'm passionate about what I do, and have knowledge in <br></br>Web Development, iOS / Android Development, and Programming
+        </div>
+      <div style={{paddingLeft:100, paddingRight: 50}} className="rightPaneAbout">
+            <h3 style={{display:'flex'}}>Skills:</h3>
+                <div className='bar'>
+                    <div className = 'bar-cpp' >C++
+                    <div className='text'>Super Effective</div>
+                    </div>                    
+                  </div>
+                  <div className='bar'>
+                    <div className = 'bar-html' >HTML/CSS 
+                    <div className='text'>Super Effective</div>   
+                    </div>                
+                </div>
+                <div className='bar'>
+                    <div className = 'bar-js' >Javascript  
+                    <div className='text'>Effective</div>                 
+                   </div>
+                </div> 
+                <div className='bar'>
+                    <div className = 'bar-php' >PHP/MySQL
+                    <div className='text'>Effective</div>
+                    </div>
+                  </div>
+                  <div className='bar'>
+                    <div className = 'bar-swift' >Swift  
+                    <div className='text'>Not Effective</div>     
+                    </div>             
+                </div>
+                <div className='bar'>
+                    <div className = 'bar-java'>Java
+                    <div className='text'>Effective</div>
+                    </div>
+                  </div>
+                  <div className='bar'>
+                    <div className = 'bar-react'>React
+                    <div className='text'>Effective</div>  
+                    </div>                  
+                </div>
+            </div>
+      </div>
   </div>
   );
 }

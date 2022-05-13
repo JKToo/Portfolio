@@ -2,8 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import Content from './Content';
 import App from "./App"
-import './styles.css';
-import './languages.css'
+import './CSS/styles.css';
+import './CSS/languages.css'
+import './CSS/about.css'
+import './CSS/timeline.css'
+import './CSS/projects.css'
+import './CSS/side.css'
 import {BrowserRouter} from 'react-router-dom'
 import $ from 'jquery';
 //import reportWebVitals from './reportWebVitals';

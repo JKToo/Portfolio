@@ -1,0 +1,15 @@
+.timelineTitle{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.timelineRole{
+    font-size: 20px;
+    font-style: italic;
+    color: aliceblue;
+}
+
+.timelineDescription{
+    font-size: 18px;
+    color: aliceblue;
+}
