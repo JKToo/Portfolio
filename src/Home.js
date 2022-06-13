@@ -11,10 +11,12 @@ const el = React.useRef(null);
 React.useEffect(() => {
   const options = {
       strings: [
-      'Programmer',
-      'Web Developer ',
+      'Software Engineer',
+      'Front End Developer',
+      'Back End Developer',
+      'Full Stack Developer',
       'Android Developer',
-      'iOS Developer '
+      'iOS Developer ',      
     ],
     typeSpeed: 50,
     backSpeed: 50,

@@ -123,6 +123,7 @@ return (
                 Universal Calculator
             </CardTitle>
                 Multi-purpose calculator for Android <br></br>
+                <strong>In works on publishing</strong>
             </CardBlock><hr></hr>
             <CardFooter className="text-xs-center">
             <div style={{display:'flex', justifyContent:'center', padding:4}}>
