@@ -5,7 +5,7 @@
 }
 
 .bar{
-    background-color: rgba(177, 170, 170, 0.587);
+    background-color: rgba(177, 170, 170, 0.426);
     width: 100%;
     margin-bottom: 10px;
     text-align: left;
@@ -17,6 +17,7 @@
 .bar-cpp{
     background-color: rgb(36, 222, 219);
     width: 70%;
+    color:rgb(12, 74, 181);
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -28,6 +29,7 @@
 .bar-html{
     background-color: rgb(36, 222, 219);
     width: 50%;
+    color:rgb(12, 74, 181);
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -39,6 +41,7 @@
 .bar-swift{
     background-color: rgb(36, 222, 219);
     width: 25%;
+    color:rgb(12, 74, 181);
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -50,6 +53,7 @@
 .bar-php{
     background-color: rgb(36, 222, 219);
     width: 30%;
+    color:rgb(12, 74, 181);
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -61,6 +65,7 @@
 .bar-react{
     background-color: rgb(36, 222, 219);
     width: 50%;
+    color:rgb(12, 74, 181);
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -70,7 +75,8 @@
 }
 .bar-java{
     background-color: rgb(36, 222, 219);
-    width: 40%;
+    width: 60%;
+    color:rgb(12, 74, 181);
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -82,6 +88,19 @@
 .bar-js{
     background-color: rgb(36, 222, 219);
     width: 40%;
+    color:rgb(12, 74, 181);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+}
+
+.bar-python{
+    background-color: rgb(36, 222, 219);
+    width: 30%;
+    color:rgb(12, 74, 181);
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -91,7 +110,7 @@
 }
 .text{
     visibility: hidden;
-    color: #21222A;
+    color: #2a2a21;
 }
 .bar:hover  {    
     opacity: .8;

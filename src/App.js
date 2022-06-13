@@ -13,6 +13,7 @@ import $ from 'jquery';
 import Timeline from "./Timeline";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ImageSlider from "./ImageSlider";
 
 function App() {
     useEffect(() => {
@@ -92,7 +93,7 @@ function App() {
                 <Projects/>
             </div>
             <div style={{paddingTop: 200}} data-aos="fade-up" id="projects">
-                <Certificates/>
+                {/* <Certificates/> */}
             </div>
         </div>
         </div>

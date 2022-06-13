@@ -10,6 +10,8 @@
     box-shadow: 0 2px 4px 0 rgba(203, 199, 199, 0.2);
     color: aliceblue;
     top: 0;
+    padding-right: 6px;
+    margin-left: -6px;
     position: sticky;
     z-index: 101;
 }

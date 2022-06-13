@@ -7,10 +7,10 @@ import emoji from './Sources/emoji.gif'
 function About() {
   return (
     <div style={{height: 1000}}>
-      <h1  className='header' style={{ outlineColor:'#FFF', fontSize:50}}>Hello! I'm 
+      <h1  className='header' style={{ outlineColor:'#FFF', fontSize:50}}>Hey there! 
       <img src={emoji} alt="test" className='emoji'/>
       </h1>
-      <h2 style={{ color:'white', fontSize:40, paddingLeft: 200}}>Justin Too</h2>
+      <h2 style={{ color:'white', fontSize:40, paddingLeft: 200}}>Here's a little bit about me</h2>
       <div className='splitScreenAbout font bg' style={{paddingLeft: 200}}>
         <div className='leftPaneAbout' style={{paddingTop: 70}}>
         I currently attend CUNY Hunter College, pursuing a <br></br>Bachelors in Arts Degree in Computer Science. <br></br>
@@ -26,7 +26,7 @@ function About() {
                   </div>
                   <div className='bar'>
                     <div className = 'bar-html' >HTML/CSS 
-                    <div className='text'>Super Effective</div>   
+                    <div className='text'>Effective</div>   
                     </div>                
                 </div>
                 <div className='bar'>
@@ -52,7 +52,12 @@ function About() {
                   <div className='bar'>
                     <div className = 'bar-react'>React
                     <div className='text'>Effective</div>  
-                    </div>                  
+                    </div>       
+                </div>
+                <div className='bar'>
+                    <div className = 'bar-python'>Python
+                    <div className='text'>Not Effective</div>  
+                    </div>       
                 </div>
             </div>
       </div>

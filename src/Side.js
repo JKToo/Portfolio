@@ -23,8 +23,6 @@ function Side() {
         <br></br>
           <div>
             <div className='stats'>
-              <h2 >Current Age:</h2> 
-              <h3 className = 'statanswers'>24</h3>
             </div>
             <div className='stats'>
             <h2>Location:</h2>

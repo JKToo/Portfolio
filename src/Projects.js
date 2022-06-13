@@ -10,6 +10,7 @@ import portfolio from './Sources/portfolio.png'
 import html from './Sources/html.png'
 import quizlet from './Sources/quizlet.png'
 import calculator from './Sources/calculator.png'
+import python from './Sources/python.png'
 import {
     Card,
     CardBlock,
@@ -238,7 +239,22 @@ return (
             </CardFooter>
          </Card>
          </a>
-        
+         <a href="https://github.com/JKToo/Python" target="_blank">
+         <Card style={{width: '18rem'}} className="card">
+            <CardImg src={python} style={{height: 286, width: 284, marginLeft:2, marginRight:2, marginTop:3}}/>
+            <CardBlock>
+            <CardTitle>
+            Python
+            </CardTitle>
+           All of my Python work <br></br><br></br>
+            </CardBlock> <hr></hr>
+            <CardFooter className="text-xs-center">
+            <div style={{display:'flex', justifyContent:'center', padding:4}}>
+            <div className='python'>Python</div>
+            </div>
+            </CardFooter>
+         </Card>
+         </a> 
        
     </div>
   </div>
