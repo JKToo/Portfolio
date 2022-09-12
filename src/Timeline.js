@@ -18,11 +18,12 @@ export default class Timeline extends React.Component {
     const curRole = timeline.History[curIdx].role; 
     const curDescription = timeline.History[curIdx].description;
     const curDescription2 = timeline.History[curIdx].description2;
+    const curDescription3 = timeline.History[curIdx].description3;
     const thumbnail = timeline.History[curIdx].thumbnail;
     const prevStatus = prevIdx >= 0 ? timeline.History[prevIdx].event : "";
     return (
       <div>
-          <h1 style={{color:'white'}}>History</h1>
+          <h1 style={{color:'white'}}>Timeline</h1>
         <div
           style={{
             width: "70%",
@@ -50,7 +51,7 @@ export default class Timeline extends React.Component {
           {/* Prevoius:-{prevStatus} - Current Select:-{curStatus} */}
           <div className="timelineTitle">{curStatus}<br></br></div>
           <div className="timelineRole">{curRole}<br></br></div><br></br>
-          <div className="timelineDescription">{curDescription}<br></br>{curDescription2}</div>
+          <div className="timelineDescription">{curDescription}<br></br>{curDescription2}<br></br>{curDescription3}</div>
         </div>
       </div>
     );

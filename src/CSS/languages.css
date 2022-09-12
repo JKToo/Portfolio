@@ -108,6 +108,19 @@
     border-bottom-left-radius: 10px;
     display: flex;
 }
+
+.bar-powershell{
+    background-color: rgb(36, 222, 219);
+    width: 40%;
+    color:rgb(12, 74, 181);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+}
+
 .text{
     visibility: hidden;
     color: #2a2a21;

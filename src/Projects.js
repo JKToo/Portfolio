@@ -11,6 +11,7 @@ import html from './Sources/html.png'
 import quizlet from './Sources/quizlet.png'
 import calculator from './Sources/calculator.png'
 import python from './Sources/python.png'
+import car from './Sources/car.png'
 import {
     Card,
     CardBlock,
@@ -161,7 +162,24 @@ return (
   <br></br><br></br>
 
 <div className='layout' data-aos="fade-up" >
-        <a href="https://github.com/JKToo/C-Plus-Plus" target="_blank">
+        <a href="https://github.com/JKToo/EasyRental" target="_blank">
+        <Card style={{width: '18rem'}} className="card">
+            <CardImg src={car} style={{height: 286, width: 288, }}/>
+            <CardBlock>
+            <CardTitle>
+                Easy Rental
+            </CardTitle>
+            MySQL Project<br></br>
+            DB designed to make rental tracking easier
+            </CardBlock><hr></hr>
+            <CardFooter className="text-xs-center">
+                <div style={{display:'flex', justifyContent:'center', padding:4}}>
+            <div className='mysql'>MySQL</div>
+            </div>
+            </CardFooter>
+         </Card>
+         </a>
+         <a href="https://github.com/JKToo/C-Plus-Plus" target="_blank">
         <Card style={{width: '18rem'}} className="card">
             <CardImg src={cpp} style={{height: 286, width: 288, }}/>
             <CardBlock>
@@ -178,6 +196,8 @@ return (
             </CardFooter>
          </Card>
          </a>
+
+         <div className='comingSoon'>
          <a href="https://github.com/JKToo/Java" target="_blank">
          <Card style={{width: '18rem'}} className="card">
             <CardImg src={java} style={{height: 286, width: 288}}/>
@@ -195,25 +215,6 @@ return (
             </CardFooter>
          </Card>
          </a>
-
-         <div className='comingSoon'>
-             <a href="https://github.com/JKToo/PHP" target="_blank">
-                <Card style={{width: '18rem'}} className="card">
-                    <CardImg src={php} style={{height: 286, width: 288}}/>
-                    <CardBlock>
-                    <CardTitle>
-                        PHP
-                    </CardTitle>
-                        All of my PHP work <br></br>
-                        Includes School projects
-                    </CardBlock>
-                    <CardFooter className="text-xs-center"><hr></hr>
-                    <div style={{display:'flex', justifyContent:'center', padding:4}}>
-                    <div className='php'>PHP</div>
-                    </div>
-                    </CardFooter>
-                </Card>
-            </a>
         </div>
        
     </div>
@@ -255,7 +256,25 @@ return (
             </CardFooter>
          </Card>
          </a> 
-       
+         <div className='comingSoon'>
+             <a href="https://github.com/JKToo/PHP" target="_blank">
+                <Card style={{width: '18rem'}} className="card">
+                    <CardImg src={php} style={{height: 286, width: 288}}/>
+                    <CardBlock>
+                    <CardTitle>
+                        PHP
+                    </CardTitle>
+                        All of my PHP work <br></br>
+                        Includes School projects
+                    </CardBlock>
+                    <CardFooter className="text-xs-center"><hr></hr>
+                    <div style={{display:'flex', justifyContent:'center', padding:4}}>
+                    <div className='php'>PHP</div>
+                    </div>
+                    </CardFooter>
+                </Card>
+            </a>
+        </div>
     </div>
   </div>
 );

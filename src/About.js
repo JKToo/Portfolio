@@ -57,7 +57,12 @@ function About() {
                 <div className='bar'>
                     <div className = 'bar-python'>Python
                     <div className='text'>Not Effective</div>  
-                    </div>       
+                    </div>                
+                </div>
+                <div className='bar'>
+                    <div className = 'bar-powershell'>PowerShell
+                    <div className='text'>Not Effective</div>  
+                    </div>                
                 </div>
             </div>
       </div>

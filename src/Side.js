@@ -12,7 +12,7 @@ function Side() {
   return (
     <div className="left-zone col-sm-2">
         <div className='sidenav'>
-      <h1 className="playerstat">Player Stats:</h1>
+      <h1 className="playerstat">Get to know me:</h1>
           <img className='sidenav-img' src={profile}></img>
         <h1>Justin Too</h1>
         <div className='link-items'>

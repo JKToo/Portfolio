@@ -49,6 +49,24 @@ export const History = [
       description2: "Current GPA: 3.5"
     },
     {
+      date: "2022-06-01",
+      status: "status",
+      event: "NYC & Company",
+      role: "Information Technician Engineer",
+      description: "- Managed NYC & Company’s service desk ticketing and troubleshoot any problems regarding the company’s technology",
+      description2: "- Developed PowerShell scripts for the company’s MDM software to help make deployments to the company more eficient",
+      description3: "- Pushed out multiple script updates to increase eficiency, speed, and production for employees with troubleshooting problems" 
+    },
+    {
+      date: "2022-09-01",
+      status: "status",
+      event: "NYC & Company",
+      role: "Information Technician Engineer",
+      description: "- Managed NYC & Company’s service desk ticketing and troubleshoot any problems regarding the company’s technology",
+      description2: "- Developed PowerShell scripts for the company’s MDM software to help make deployments to the company more eficient",
+      description3: "- Pushed out multiple script updates to increase eficiency, speed, and production for employees with troubleshooting problems" 
+    },
+    {
       date: "2023-06-05",
       status: "status",
       event: "Hunter College",
