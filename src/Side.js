@@ -20,11 +20,11 @@ const Side = () => {
   const [gitImg, setGitImg] = useState(null)
   const [gitDate, setDate] = useState(null)
   let dataReturned;
-  // console.log("data: " + strings)
+
   useEffect(() => {
     async function test() {
       const octokit = new Octokit({ auth: apiKey });
-      dataReturned = await octokit.request('GET /repos/jktoo/UniversalCalculator/commits', {
+      dataReturned = await octokit.request('GET /repos/jktoo/Universal-Calculator/commits', {
         owner: 'OWNER',
         repo: 'REPO',
       })
