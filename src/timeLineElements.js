@@ -8,20 +8,23 @@ export const History = [
         role: "Graduate",
         description: "Graduated from New York Chinese School",
         description2: "2002 - 2012",
+        duration: "",
       },
     {
       date: "2017-05-27",
       status: "status",
       event: "Gil Leung & Associates",
       role: "Clerical Volunteer",
-      description: "- Helped with general office tasks such as data entry & scheduling"
+      description: "- Helped with general office tasks such as data entry & scheduling",
+      duration: "May 2017 - Aug 2017",
     },
     {
       date: "2018-05-27",
       status: "status",
       event: "Gil Leung & Associates",
       role: "Clerical Volunteer",
-      description: "- Helped with general office tasks such as data entry & scheduling"
+      description: "- Helped with general office tasks such as data entry & scheduling",
+      duration: "May 2018 - Aug 2018",
     },
    
     {
@@ -30,7 +33,8 @@ export const History = [
       event: "Waitron Inc",
       role: "Software Engineer Intern",
       description: "- Sole ownership of updating Waitron’s backend code using PHP, and MySQLdb ",
-      description2: "- Reviewed error logs & performed debugging in Linux"
+      description2: "- Reviewed error logs & performed debugging in Linux",
+      duration: "June 2019 - Aug 2019",
     },
     {
       date: "2021-06-05",
@@ -38,7 +42,7 @@ export const History = [
       event: "Borough Of Manhattan Community College",
       role: "Graduated",
       description: "Associates in Science Computer Science",
-      description2: "GPA: 3.86"
+      description2: "GPA: 3.86",
     },
     {
       date: "2021-08-26",
@@ -46,31 +50,34 @@ export const History = [
       event: "Hunter College",
       role: "Student",
       description: "Pursuing Bachelors of Arts Computer Science",
-      description2: "Current GPA: 3.5"
+      description2: "Current GPA: 3.5",
     },
     {
       date: "2022-06-01",
       status: "status",
       event: "NYC & Company",
-      role: "Information Technician Engineer",
+      role: "Information Technician Engineer Intern",
       description: "- Managed NYC & Company’s service desk ticketing and troubleshoot any problems regarding the company’s technology",
       description2: "- Developed PowerShell scripts for the company’s MDM software to help make deployments to the company more eficient",
-      description3: "- Pushed out multiple script updates to increase eficiency, speed, and production for employees with troubleshooting problems" 
+      description3: "- Pushed out multiple script updates to increase eficiency, speed, and production for employees with troubleshooting problems" ,
+      duration: "May 2022 - Aug 2022",
     },
     {
       date: "2022-09-01",
       status: "status",
       event: "NYC & Company",
-      role: "Information Technician Engineer",
+      role: "Information Technician Engineer Intern",
       description: "- Managed NYC & Company’s service desk ticketing and troubleshoot any problems regarding the company’s technology",
       description2: "- Developed PowerShell scripts for the company’s MDM software to help make deployments to the company more eficient",
-      description3: "- Pushed out multiple script updates to increase eficiency, speed, and production for employees with troubleshooting problems" 
+      description3: "- Pushed out multiple script updates to increase eficiency, speed, and production for employees with troubleshooting problems",
+      duration: "Sept 2022 - Dec 2022", 
     },
     {
       date: "2023-06-05",
       status: "status",
       event: "Hunter College",
       role: "Expected Graduation",
-      description: "Bachelors of Arts Computer Science"
+      description: "Bachelors of Arts Computer Science",
+      duration: "",
     }
   ];

@@ -2,15 +2,16 @@
 .playerstat{
     text-shadow: -1px -1px 0 #c0bfbfc4, 1px -1px 0 rgb(36, 222, 219), -1px 1px 0 rgb(78, 78, 78), 1px 1px 0 rgb(235, 206, 47);
     font-style: italic;
+    display: flex;
+    
 }
 
 .stats{
-    display: flex;
-    font-size: 15px;
+    text-align: center;
+    
 }
 
 .statanswers{
     justify-content: center;
-    margin-left: 10px;
-    padding-top: 4.5px;
+    text-align: center;
 }

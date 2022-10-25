@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./Home";
 import About from "./About";
@@ -14,12 +14,20 @@ import Timeline from "./Timeline";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ImageSlider from "./ImageSlider";
+import axios from "axios"
+const { Octokit } = require("@octokit/core");
 
 function App() {
     useEffect(() => {
         Aos.init({duration: 2000});
     }, [])
 
+    
+// function display(){
+//     setTimeout(() => {
+//       console.log("git: " +github)
+//     }, 500);
+//   }
     var lZone = $('.left-zone');
     $(window).on('scroll', function() {
         lZone.css('margin-top', $(document).scrollTop() + 100);
@@ -78,15 +86,46 @@ function App() {
                 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
                 SOFTWARE.
                 </div>
+
+                <div className="credits">
+                The MIT License (MIT)
+
+                Copyright (c) 2014 Call-Em-All
+
+                Permission is hereby granted, free of charge, to any person obtaining a copy
+                of this software and associated documentation files (the "Software"), to deal
+                in the Software without restriction, including without limitation the rights
+                to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                copies of the Software, and to permit persons to whom the Software is
+                furnished to do so, subject to the following conditions:
+
+                The above copyright notice and this permission notice shall be included in all
+                copies or substantial portions of the Software.
+
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+                SOFTWARE.
+                </div>
         <div className="splitScreen">
-        <div className="leftPane"><Side/></div>  
-        <div className="rightPane">
+        
+        <div style={{width: "100%"}}>
                  <Home/>
-            <div style={{paddingTop: 50}} data-aos="fade-up" id="about">
+                 <div style={{marginTop: 100}} data-aos="fade-up" id="about1">            
+
+                    {/* <div >
+                        <br></br>
+                    
+                    </div> */}
+            </div> 
+            <div style={{paddingTop: 50}} data-aos="fade-up" id="about">            
+
                     <About/>
-                    <div  data-aos="fade-up" style={{paddingBottom: 150}}>
-                    <Timeline/>
-                    </div>
+                    {/* <div  data-aos="fade-up" style={{paddingBottom: 0}}>
+                    </div> */}
             </div>  
 
             <div style={{paddingTop: 200}} data-aos="fade-up" id="projects">

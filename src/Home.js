@@ -1,8 +1,13 @@
 import React, { useEffect }   from 'react';
 import Typed from 'typed.js';
 import './CSS/styles.css';
+import Card from "@mui/material/Card";
+import Side from "./Side"
+import axios from "axios"
+const { Octokit } = require("@octokit/core");
 
-function Home() {
+
+const Home = ( {data} ) => {
 // Create reference to store the DOM element containing the animation
 const el = React.useRef(null);
 // Create reference to store the Typed instance itself
@@ -18,7 +23,7 @@ React.useEffect(() => {
     ],
     typeSpeed: 50,
     backSpeed: 50,
-    loop: true
+    loop: false
   };
   
   // elRef refers to the <span> rendered below
@@ -30,9 +35,9 @@ React.useEffect(() => {
     typed.current.destroy();
   }
 }, [])
-
 return (
-  <div className="wrap" >
+  <div>
+  <div className="wrap" style={{marginTop:"5", justifyContent:"center", textAlign:"center"}}>
     <div className="centerHeader">
         <p>Justin Too</p>
         </div>
@@ -60,8 +65,17 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE. */}
 
-    <h1>&lt; <span style={{ whiteSpace: 'pre' }} ref={el} />&gt;</h1>
+    <h1>&lt; <span style={{ whiteSpace: 'pre' , color:"#0072E5"}} ref={el} />&gt;</h1>
     </div>
+  </div>
+  {/* <div className="homeCard" style={{color:"black", width: "50%", background:"#F3F6F9"}}> */}
+    {/* <div className = "muiCard"> */}
+    
+    {/* <Side/> */}
+
+    {/* </div> */}
+    
+  {/* </div> */}
   </div>
 );
 }

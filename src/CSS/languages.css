@@ -15,9 +15,9 @@
 }
 
 .bar-cpp{
-    background-color: rgb(36, 222, 219);
+    background-color: #007FFF;
     width: 70%;
-    color:rgb(12, 74, 181);
+    color:white;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -27,9 +27,9 @@
 }
 
 .bar-html{
-    background-color: rgb(36, 222, 219);
+    background-color: #007FFF;
     width: 50%;
-    color:rgb(12, 74, 181);
+    color:white;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -39,9 +39,9 @@
 }
 
 .bar-swift{
-    background-color: rgb(36, 222, 219);
+    background-color: #007FFF;
     width: 25%;
-    color:rgb(12, 74, 181);
+    color:white;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -51,9 +51,9 @@
 }
 
 .bar-php{
-    background-color: rgb(36, 222, 219);
+    background-color: #007FFF;
     width: 30%;
-    color:rgb(12, 74, 181);
+    color:white;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -63,9 +63,9 @@
 }
 
 .bar-react{
-    background-color: rgb(36, 222, 219);
+    background-color: #007FFF;
     width: 50%;
-    color:rgb(12, 74, 181);
+    color:white;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -74,9 +74,9 @@
     display: flex;
 }
 .bar-java{
-    background-color: rgb(36, 222, 219);
+    background-color: #007FFF;
     width: 60%;
-    color:rgb(12, 74, 181);
+    color:white;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -86,9 +86,9 @@
 }
 
 .bar-js{
-    background-color: rgb(36, 222, 219);
+    background-color: #007FFF;
     width: 40%;
-    color:rgb(12, 74, 181);
+    color:white;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -98,9 +98,9 @@
 }
 
 .bar-python{
-    background-color: rgb(36, 222, 219);
+    background-color: #007FFF;
     width: 30%;
-    color:rgb(12, 74, 181);
+    color:white;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -110,15 +110,16 @@
 }
 
 .bar-powershell{
-    background-color: rgb(36, 222, 219);
+    background-color: #007FFF;
     width: 40%;
-    color:rgb(12, 74, 181);
+    color:white;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 7px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;
+    
 }
 
 .text{

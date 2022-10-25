@@ -1,14 +1,14 @@
 /* NavBar*/
 .nav {
-    background-color: #21222A;
-    opacity: 100%;
+    background-color: #fff;
+    opacity: 90%;
     display: flex;
     justify-content: center;
     width: 100%;
     font-size: large;
     align-items: center;
     box-shadow: 0 2px 4px 0 rgba(203, 199, 199, 0.2);
-    color: aliceblue;
+    color: black;
     top: 0;
     padding-right: 6px;
     margin-left: -6px;
@@ -29,7 +29,7 @@ li:hover{
     cursor: pointer;
 }
 .sidenav-img{
-    border-radius: 50%;
+    border-radius: 10%;
     width: 50%;
 }
 .sidenav {
@@ -65,8 +65,9 @@ li:hover{
 
 body{
     /*  background-color: #21222A; */
-    background-color: #21222A;
+    background-color: #fff;
     color: rgb(8, 8, 8);
+
    /* background-image: url('bg.jpg') */
 }
 
@@ -96,19 +97,21 @@ a, a:hover, a:active, a:focus {
 
 .center{
     text-align: center;
-    color:rgb(251, 255, 0);
+    color:black;
     size: 30px;    
     margin-bottom: 40%;
 }
 
 .centerHeader{
-    margin-top:20%;
-    color:rgb(227, 227, 227);
+    margin-top:10%;
+    color:black;
     font-size: 70px;
+    
 }
 
 .wrap{
     margin-right: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -128,4 +131,17 @@ a, a:hover, a:active, a:focus {
 }
 .rightPane{
     width: 80%;
+}
+
+
+.homeCard{
+    background-color: #ededee;
+}
+
+.muiCard{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    height: 85%;
+    /* background: linear-gradient(to right bottom,#007FFF, #0059B2) */
 }
