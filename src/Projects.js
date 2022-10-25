@@ -51,7 +51,7 @@ return (
                         <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888"}}>
                             <CardHeader
                                 title="First Come First Serve"
-                                subheader="September 14, 2016"
+                                subheader="August 25, 2020"
                             />
                             <CardMedia
                                 component="img"
@@ -86,7 +86,7 @@ return (
 
                             <CardHeader
                                 title="Study Peer"
-                                subheader="September 14, 2016"
+                                subheader="September 5, 2021"
                             />
                             <CardMedia
                                 component="img"
@@ -118,7 +118,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="Portfolio Website"
-                                subheader="September 14, 2016"
+                                subheader="April, 2020"
                             />
                             <CardMedia
                                 component="img"
@@ -151,7 +151,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="Cooking101"
-                                subheader="September 14, 2016"
+                                subheader="February, 2022"
                             />
                             <CardMedia
                                 component="img"
@@ -182,7 +182,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="Universal Calculator"
-                                subheader="September 14, 2016"
+                                subheader="September 26, 2021"
                             />
                             <CardMedia
                                 component="img"
@@ -213,7 +213,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="Quizlet API"
-                                subheader="September 14, 2016"
+                                subheader="May 3, 2022"
                             />
                             <CardMedia
                                 component="img"
@@ -244,7 +244,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="Easy Rental"
-                                subheader="September 14, 2016"
+                                subheader="August 12, 2022"
                             />
                             <CardMedia
                                 component="img"
@@ -274,7 +274,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="C++"
-                                subheader="September 14, 2016"
+                                subheader="2017-2022"
                             />
                             <CardMedia
                                 component="img"
@@ -304,7 +304,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="Java"
-                                subheader="September 14, 2016"
+                                subheader="2017-2022"
                             />
                             <CardMedia
                                 component="img"
@@ -335,7 +335,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="HTML/CSS"
-                                subheader="September 14, 2016"
+                                subheader="2017-2022"
                             />
                             <CardMedia
                                 component="img"
@@ -367,7 +367,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="Python"
-                                subheader="September 14, 2016"
+                                subheader="2017-2022"
                             />
                             <CardMedia
                                 component="img"
@@ -398,7 +398,7 @@ return (
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
                                 title="PHP"
-                                subheader="September 14, 2016"
+                                subheader="2017-2022"
                             />
                             <CardMedia
                                 component="img"

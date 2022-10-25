@@ -37,7 +37,7 @@ React.useEffect(() => {
 }, [])
 return (
   <div>
-  <div className="wrap" style={{marginTop:"5", justifyContent:"center", textAlign:"center"}}>
+  <div className="wrap" style={{justifyContent:"center", textAlign:"center"}}>
     <div className="centerHeader">
         <p>Justin Too</p>
         </div>

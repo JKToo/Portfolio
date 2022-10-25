@@ -121,7 +121,7 @@ function App() {
                     
                     </div> */}
             </div> 
-            <div style={{paddingTop: 50}} data-aos="fade-up" id="about">            
+            <div  data-aos="fade-up" id="about">            
 
                     <About/>
                     {/* <div  data-aos="fade-up" style={{paddingBottom: 0}}>

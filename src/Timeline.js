@@ -25,7 +25,7 @@ export default class Timeline extends React.Component {
     const prevStatus = prevIdx >= 0 ? timeline.History[prevIdx].event : "";
     return (
       <div>
-        <Card style={{borderRadius:"5px", marginLeft:"5%", marginRight:"5%", paddingBottom:"1%"}}>
+        <Card style={{borderRadius:"5px", marginLeft:"5%", marginRight:"5%", paddingBottom:"1%", boxShadow: "3px 3px 3px #888888" }}>
           <h1 style={{color:'black'}}>Timeline</h1>
         <div
           style={{
