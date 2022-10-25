@@ -12,8 +12,7 @@ import { format } from "date-fns";
 
 
 const Side = () => {
-
-  const apiKey=process.env.REACT_APP_API_KEY;
+  const apiKey = process.env.REACT_APP_API_KEY;
   let github = []
   let commit1, commit2, commit3;
   const [isLoading, setLoading] = useState(true);
@@ -21,7 +20,6 @@ const Side = () => {
   const [gitImg, setGitImg] = useState(null)
   const [gitDate, setDate] = useState(null)
   let dataReturned;
-  let s;
   // console.log("data: " + strings)
   useEffect(() => {
     async function test() {
