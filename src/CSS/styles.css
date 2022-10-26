@@ -121,10 +121,10 @@ a, a:hover, a:active, a:focus {
     padding-right: 1%;
 }
 
-.splitScreen {
+/* .splitScreen {
     display: flex;
     flex-direction: row;
-}
+} */
 .leftPane{
     width: 20%;
 }

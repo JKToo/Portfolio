@@ -24,9 +24,10 @@ export default class Timeline extends React.Component {
     const thumbnail = timeline.History[curIdx].thumbnail;
     const prevStatus = prevIdx >= 0 ? timeline.History[prevIdx].event : "";
     return (
-      <div>
+                  <div className='layout' data-aos="fade-up" >
+
         <Card style={{borderRadius:"5px", marginLeft:"5%", marginRight:"5%", paddingBottom:"1%", boxShadow: "3px 3px 3px #888888" }}>
-          <h1 style={{color:'black'}}>Timeline</h1>
+          <h1 style={{color:'#007FFF'}}>Timeline</h1>
         <div
           style={{
             width: "70%",
@@ -34,13 +35,13 @@ export default class Timeline extends React.Component {
             margin: "0 auto",
             marginTop: "20px",
             fontSize: "15px",
-            color:'#007FFF'
+            color:'black'
           }}
         >
           <HorizontalTimeline
             styles={{
-              foreground: "rgb(36, 222, 219)",
-              outline: "#007FFF",
+              foreground: "#007FFF",
+              outline: "black",
             }}
             index={this.state.curIdx}
             indexClick={(index) => {

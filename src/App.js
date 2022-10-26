@@ -110,17 +110,11 @@ function App() {
                 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
                 SOFTWARE.
                 </div>
-        <div className="splitScreen">
+        <div>
         
         <div style={{width: "100%"}}>
                  <Home/>
-                 <div style={{marginTop: 100}} data-aos="fade-up" id="about1">            
-
-                    {/* <div >
-                        <br></br>
-                    
-                    </div> */}
-            </div> 
+                 
             <div  data-aos="fade-up" id="about">            
 
                     <About/>

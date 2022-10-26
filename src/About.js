@@ -28,6 +28,8 @@ function About() {
         I have a love for technology and hope <br></br>to one day make a difference through it.<br></br>
         I'm passionate about what I do, and have knowledge in <br></br>Web Development, iOS / Android Development, and Programming
         </div> */}
+            <div data-aos="fade-up" >
+        <Card style={{paddingLeft:"10px", paddingRight:"10px", boxShadow: "3px 3px 3px #888888"}}>
               <div>
                 <h3 style={{ display: 'flex' }}>Skills:</h3>
                 <div className='bar'>
@@ -76,10 +78,13 @@ function About() {
                   </div>
                 </div>
               </div>
+              </Card>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
       <AnimatePresence>
         <div data-aos="fade-up" style={{ paddingBottom: 200}}>
           <Timeline />

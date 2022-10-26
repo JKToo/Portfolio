@@ -19,7 +19,8 @@ React.useEffect(() => {
       'Software Engineer',
       'Full Stack Developer',
       'Android | IOS Developer',     
-      'Information Technician '
+      'Information Technician ',
+      'Web Developer'
     ],
     typeSpeed: 50,
     backSpeed: 50,
@@ -37,7 +38,7 @@ React.useEffect(() => {
 }, [])
 return (
   <div>
-  <div className="wrap" style={{justifyContent:"center", textAlign:"center"}}>
+  <div style={{justifyContent:"center", textAlign:"center"}}>
     <div className="centerHeader">
         <p>Justin Too</p>
         </div>

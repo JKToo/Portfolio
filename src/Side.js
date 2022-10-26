@@ -9,6 +9,7 @@ import Github from "./components/github"
 import { Octokit } from "@octokit/core"
 import { Skeleton } from "@mui/material";
 import { format } from "date-fns";
+import Button from '@mui/material/Button';
 
 
 const Side = () => {
@@ -62,23 +63,32 @@ const Side = () => {
         <div style={{ height: "50%", margin: "10px 10px 10px 10px" }}>
           <div style={{ flexDirection: "row", display: "flex" }}>
             <div style={{ width: "50%", margin: "10px 10px 10px 10px" }}>
-              <Card style={{ height: "100%", background: "white", color: "black",boxShadow: "3px 3px 3px #888888" }}>
+
+            <div className='layout' data-aos="fade-up" >
+
+              <Card style={{ height: "100%", background: "white", color: "black",boxShadow: "3px 3px 3px #888888",minHeight:300 }}>
 
                 <img className='sidenav-img' style={{ marginTop: "10px" }} src={profile}></img>
                 <h3>Justin Too</h3>
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <h3 style={{ margin: "10px" ,color: "rgb(0, 114, 229)"}}>Status: </h3><p style={{ marginTop: "12px" }}><i>Student</i> </p></div>
+                  <div style={{display:"flex", justifyContent:"center"}}>
+                    <Button variant="contained" style={{margin:5}} href="https://github.com/JKToo" target="_blank">Github</Button>
+                    <Button variant="contained" style={{margin:5}} href="https://www.linkedin.com/in/justin-k-too/" target="_blank">Linkedin</Button>
+                    </div>
               </Card>
+              </div>
             </div>
             <div style={{ width: "50%", margin: "10px 10px 10px 10px" }}>
-              <Card style={{ background: "white", color: "black",boxShadow: "3px 3px 3px #888888" }}>
+            <div  data-aos="fade-up" >
+              <Card style={{ background: "white", color: "black",boxShadow: "3px 3px 3px #888888", minHeight:300}}>
 
                 <div>
                   <div className='stats'>
                   </div>
                   <div className='stats'>
                     <h3 style={{color: "rgb(0, 114, 229)"}}>Location:</h3>
-                    <p className='statanswers'>The Big Apple</p>
+                    <p className='statanswers'>New York City</p>
                   </div>
                   <div className='stats'>
                     <h3 style={{color: "rgb(0, 114, 229)"}}>Degree:</h3>
@@ -89,14 +99,16 @@ const Side = () => {
                     <p className='statanswers'>Programming | Gaming</p>
                   </div>
                 </div>
-              </Card>
+              </Card></div>
             </div>
           </div>
           <div style={{ height: "50%", margin: "10px 10px 10px 10px" }}>
+          <div className='layout' data-aos="fade-up" >
             <Card style={{ height: "100%", width: "100%", background: "white",boxShadow: "2px 2px 2px #888888" }}>
               <h2 style={{ justifyContent: "center",  color: "rgb(0, 114, 229)",}}>Featured Github Project </h2>
               <div style={{ justifyContent: "center"}}>
                 <h3>Universal Calculator</h3>
+                <div style={{marginTop:"-10px"}}> <i>Live data feed</i></div><br/>
                 <div>{isLoading ? <Skeleton><div style={{ justifyContent: "left", display:"flex", paddingBottom:"50px"}}>
                     <Card style={{width:"100%", marginLeft:"10px", paddingBottom:"20px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white", boxShadow: "3px 3px 3px #888888"}}>
                       <h3>Recent Commits:</h3>
@@ -163,6 +175,7 @@ const Side = () => {
               </div>
 
             </Card>
+            </div>
           </div>
         </div>
 
