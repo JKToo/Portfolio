@@ -15,3 +15,8 @@
     justify-content: center;
     text-align: center;
 }
+
+@media screen and (max-width: 640px){
+	/* Mobile Responsiveness CSS here */
+	
+}

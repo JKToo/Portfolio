@@ -10,6 +10,7 @@ import { Octokit } from "@octokit/core"
 import { Skeleton } from "@mui/material";
 import { format } from "date-fns";
 import Button from '@mui/material/Button';
+import Grid from "@mui/material/Grid";
 
 
 const Side = () => {
@@ -46,42 +47,41 @@ const Side = () => {
   commit1 = details[0];
   commit2 = details[1];
   commit3 = details[2];
-  // function display(){
-  //   setTimeout(() => {
-  //     console.log(dataReturned)
-  //   }, 3000);
-  // }
-  // console.log("logging data: " + data)
-
-  // console.log(det)
 
 
   return (
     <>
+          <Grid sx={{ flexGrow: 1 }} container spacing={2} style={{width:"100%", marginLeft:"5px"}}>
 
-      <div style={{ flexDirection: "column", display: "flex" }}>
-        <div style={{ height: "50%", margin: "10px 10px 10px 10px" }}>
-          <div style={{ flexDirection: "row", display: "flex" }}>
-            <div style={{ width: "50%", margin: "10px 10px 10px 10px" }}>
+            <Grid item xs={12}>
+            <Grid container  spacing={3}>
+            <Grid key={1}   item   className = "resizer">
 
-            <div className='layout' data-aos="fade-up" >
+            
+            <div className='layout' data-aos="fade-up">
+            
 
-              <Card style={{ height: "100%", background: "white", color: "black",boxShadow: "3px 3px 3px #888888",minHeight:300 }}>
+                
+                <Card style={{ height: "50%", background: "white", color: "black",boxShadow: "3px 3px 3px #888888",minHeight:300, maxHeight:300 }}>
 
-                <img className='sidenav-img' style={{ marginTop: "10px" }} src={profile}></img>
-                <h3>Justin Too</h3>
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                  <h3 style={{ margin: "10px" ,color: "rgb(0, 114, 229)"}}>Status: </h3><p style={{ marginTop: "12px" }}><i>Student</i> </p></div>
+                <img className='sidenav-img' style={{ marginTop: "10px", width: "40%" }} src={profile}></img>
+                <p>Justin Too</p>
                   <div style={{display:"flex", justifyContent:"center"}}>
                     <Button variant="contained" style={{margin:5}} href="https://github.com/JKToo" target="_blank">Github</Button>
                     <Button variant="contained" style={{margin:5}} href="https://www.linkedin.com/in/justin-k-too/" target="_blank">Linkedin</Button>
                     </div>
-              </Card>
+                </Card>
+               
+             
               </div>
-            </div>
-            <div style={{ width: "50%", margin: "10px 10px 10px 10px" }}>
+            </Grid>
+
+            <Grid key={2} item className = "resizer">
+
+
             <div  data-aos="fade-up" >
-              <Card style={{ background: "white", color: "black",boxShadow: "3px 3px 3px #888888", minHeight:300}}>
+
+              <Card style={{ background: "white", color: "black",boxShadow: "3px 3px 3px #888888", paddingLeft:"10px", paddingRight:"10px", minHeight:300, maxHeight:300}}>
 
                 <div>
                   <div className='stats'>
@@ -99,10 +99,17 @@ const Side = () => {
                     <p className='statanswers'>Programming | Gaming</p>
                   </div>
                 </div>
-              </Card></div>
-            </div>
-          </div>
-          <div style={{ height: "50%", margin: "10px 10px 10px 10px" }}>
+              </Card>
+              
+              </div>
+              </Grid>
+              </Grid>
+              </Grid>
+            {/* </div> */}
+
+
+          <Grid key={3} item style={{width:"100%"}}>
+
           <div className='layout' data-aos="fade-up" >
             <Card style={{ height: "100%", width: "100%", background: "white",boxShadow: "2px 2px 2px #888888" }}>
               <h2 style={{ justifyContent: "center",  color: "rgb(0, 114, 229)",}}>Featured Github Project </h2>
@@ -139,6 +146,7 @@ const Side = () => {
                       </div>
                     </Card>
                   </div></Skeleton>: <>
+                  
                   <div style={{ justifyContent: "left", display:"flex", paddingBottom:"50px"}}>
                     <Card style={{width:"50%", marginLeft:"10px", paddingBottom:"20px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white", boxShadow: "3px 3px 3px #888888"}}>
                       <h3>Recent Commits:</h3>
@@ -159,13 +167,10 @@ const Side = () => {
                       <h3>Last modified:</h3>
                       {gitDate}
 
-                      <div style={{display:"flex", flexDirection:"row"}}>
-                        <div style={{width:"50%", float:"right"}}>
-                      <h3>Repository Status:</h3>
-                      </div>
-                      <div style={{width:"10%", marginTop:"5px"}}>
-                      <p><i>Private</i></p>
-                      </div>
+                     
+                        <div style={{width:"100%", textAlign:"center"}}>
+                      <p><b>Repository Status:</b>    <i style={{textDecoration:"none"}}>Private</i></p>
+                     
                       </div>
                     </Card>
                   </div>
@@ -176,10 +181,10 @@ const Side = () => {
 
             </Card>
             </div>
-          </div>
-        </div>
+          </Grid>
 
-      </div>
+      </Grid>
+
     </>
   );
 }
