@@ -51,7 +51,7 @@ const Side = () => {
 
   return (
     <>
-          <Grid sx={{ flexGrow: 1 }} container spacing={2} style={{width:"100%", marginLeft:"5px"}}>
+          <Grid sx={{ flexGrow: 1 }} container spacing={2} style={{width:"100%", marginLeft:"0.5px"}}>
 
             <Grid item xs={12}>
             <Grid container  spacing={3}>

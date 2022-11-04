@@ -13,14 +13,14 @@ function About() {
   return (
     <div style={{ background: "#F3F6F9", width:"100%"}}>
       {/* className="splitScreenAbout" */}
-      <Grid sx={{ flexGrow: 1 }} container spacing={2} >
+      <Grid sx={{ flexGrow: 1 }} container spacing={1} style={{width:"100%"}}>
 
         <Grid item xs={12}>
-          <Grid container spacing={1} >
-            <Grid key={1} item className="resizer" style={{marginTop:"8%"}}>
+          <Grid container spacing={3} >
+            <Grid key={1} item className="resizer" style={{marginTop:"8%" }}>
               <Side />
             </Grid>
-            <Grid key={2} item style={{marginLeft:"10px"}}>
+            <Grid key={2} item style={{}}  className="resizer" >
               <p style={{ color: '#007FFF', fontSize: 40 }}>Hey there!
                 <img src={emoji} alt="emoji" className='emoji' />
               </p>
