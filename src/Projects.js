@@ -43,9 +43,9 @@ return (
 
     <Grid sx={{ flexGrow: 1 }} container spacing={2}>
         <Grid item xs={12}>
-            <Grid container justifyContent="center" spacing={3}>
+            <Grid container justifyContent="center" spacing={3} >
 
-                <Grid key={1} item>
+                <Grid key={1} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Laundry-Reservation" target="_blank">
                         <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888"}}>
@@ -79,10 +79,10 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={2} item>
+                <Grid key={2} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Study-Peer-Discord-Bot" target="_blank">
-                    <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
+                    <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }} >
 
                             <CardHeader
                                 title="Study Peer"
@@ -112,7 +112,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={3} item>
+                <Grid key={3} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Portfolio" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -145,7 +145,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={4} item>
+                <Grid key={4} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Cooking101" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -176,7 +176,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={5} item>
+                <Grid key={5} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea className="comingSoon">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -207,7 +207,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={6} item>
+                <Grid key={6} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Quizlet_API" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -238,7 +238,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={7} item>
+                <Grid key={7} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/EasyRental" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -268,7 +268,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={8} item>
+                <Grid key={8} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/C-Plus-Plus" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -298,7 +298,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={9} item>
+                <Grid key={9} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Java" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -329,7 +329,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={10} item>
+                <Grid key={10} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/HTML" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -361,7 +361,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={11} item>
+                <Grid key={11} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Python" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -392,7 +392,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={12} item>
+                <Grid key={12} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/PHP" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>

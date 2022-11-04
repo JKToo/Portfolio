@@ -58,8 +58,8 @@ export const History = [
       event: "NYC & Company",
       role: "Information Technician Engineer Intern",
       description: "- Managed NYC & Company’s service desk ticketing and troubleshoot any problems regarding the company’s technology",
-      description2: "- Developed PowerShell scripts for the company’s MDM software to help make deployments to the company more eficient",
-      description3: "- Pushed out multiple script updates to increase eficiency, speed, and production for employees with troubleshooting problems" ,
+      description2: "- Developed PowerShell scripts for the company’s MDM software to help make deployments to the company more efficient",
+      description3: "- Pushed out multiple script updates to increase efficiency, speed, and production for employees with troubleshooting problems" ,
       duration: "May 2022 - Aug 2022",
     },
     {
@@ -68,8 +68,8 @@ export const History = [
       event: "NYC & Company",
       role: "Information Technician Engineer Intern",
       description: "- Managed NYC & Company’s service desk ticketing and troubleshoot any problems regarding the company’s technology",
-      description2: "- Developed PowerShell scripts for the company’s MDM software to help make deployments to the company more eficient",
-      description3: "- Pushed out multiple script updates to increase eficiency, speed, and production for employees with troubleshooting problems",
+      description2: "- Developed PowerShell scripts for the company’s MDM software to help make deployments to the company more efficient",
+      description3: "- Pushed out multiple script updates to increase efficiency, speed, and production for employees with troubleshooting problems",
       duration: "Sept 2022 - Dec 2022", 
     },
     {

@@ -103,3 +103,13 @@
         color: #0072E5;
         margin-left: 2px;
 }
+
+.cards{
+    transition: transform .9s ease-in-out;
+    
+}
+
+.cards:hover{
+    transition: 0.5s;
+    scale: 1.1;
+}
