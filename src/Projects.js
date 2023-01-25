@@ -19,7 +19,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
-
+import pluvio from './Sources/pluvio.png';
+import hexcalc from './Sources/hexadecimalcalculator.png';
+import tictactoe from './Sources/tictactoe.png'
 import {
 Card,
 CardBlock,
@@ -44,6 +46,40 @@ return (
     <Grid sx={{ flexGrow: 1 }} container spacing={2}>
         <Grid item xs={12}>
             <Grid container justifyContent="center" spacing={3} >
+
+            <Grid key={0} item className = "cards">
+                <div className='layout' data-aos="fade-up" >
+                    <CardActionArea href="https://github.com/feizza615/pluvio" target="_blank">
+                        <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888"}}>
+                            <CardHeader
+                                title="Pluvio"
+                                subheader="December 1, 2022"
+                            />
+                            <CardMedia
+                                component="img"
+                                height="194"
+                                image={pluvio}
+                                alt="Laundry"
+                            />
+                            <CardContent>
+                                <Typography variant="body1" color="text.primary">
+                                    Movie-based social media platform <br></br>
+                                    Incorporated an AI recommendation system 
+                                </Typography><hr />
+                                <Typography variant="body2" color="text.secondary">
+                                    Developed in: <br></br>
+                                    <div style={{ display: 'flex', justifyContent: 'center', padding: 4 }}>
+                                        <div className='js'>MongoDB</div>
+                                        <div className='js'>Express</div>
+                                        <div className='js'>React</div>
+                                        <div className='js'>NodeJS</div>
+                                        <div className='js'>Jupyter</div></div>
+                                </Typography>
+                            </CardContent>
+                        </Cards>
+                    </CardActionArea>
+                    </div>
+                </Grid>
 
                 <Grid key={1} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
@@ -240,6 +276,67 @@ return (
 
                 <Grid key={7} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
+                    <CardActionArea href="https://github.com/JKToo/Hexadecimal_Calculator" target="_blank">
+                    <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
+                            <CardHeader
+                                title="Hexadecimal Calculator"
+                                subheader="October 3, 2022"
+                            />
+                            <CardMedia
+                                component="img"
+                                height="194"
+                                image={hexcalc}
+                                alt="quizlet"
+                            />
+                            <CardContent>
+                                <Typography variant="body1" color="text.primary">
+                                    Developed Hex Calculator in React <br></br>
+                                    <br/>
+                                </Typography><hr />
+                                <Typography variant="body2" color="text.secondary">
+                                    Developed in: <br></br>
+                                    <div style={{ display: 'flex', justifyContent: 'center', padding: 4 }}>
+                                        <div className='js'>ReactJS</div>
+                                        <div className='api'>MaterialUI</div></div>
+                                </Typography>
+                            </CardContent>
+                        </Cards>
+                    </CardActionArea>
+                    </div>
+                </Grid>
+                <Grid key={7.1} item className = "cards">
+                <div className='layout' data-aos="fade-up" >
+                    <CardActionArea href="https://github.com/JKToo/Tic-Tac-Toe" target="_blank">
+                    <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
+                            <CardHeader
+                                title="Tic Tac Toe"
+                                subheader="November 7, 2022"
+                            />
+                            <CardMedia
+                                component="img"
+                                height="194"
+                                image={tictactoe}
+                                alt="quizlet"
+                            />
+                            <CardContent>
+                                <Typography variant="body1" color="text.primary">
+                                    Tic Tac Toe game <br></br>
+                                    <br/>
+                                </Typography><hr />
+                                <Typography variant="body2" color="text.secondary">
+                                    Developed in: <br></br>
+                                    <div style={{ display: 'flex', justifyContent: 'center', padding: 4 }}>
+                                        <div className='js'>ReactJS</div>
+                                        <div className='api'>MaterialUI</div></div>
+                                </Typography>
+                            </CardContent>
+                        </Cards>
+                    </CardActionArea>
+                    </div>
+                </Grid>
+
+                <Grid key={8} item className = "cards">
+                <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/EasyRental" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
@@ -268,7 +365,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={8} item className = "cards">
+                <Grid key={9} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/C-Plus-Plus" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -298,7 +395,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={9} item className = "cards">
+                <Grid key={10} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Java" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -329,7 +426,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={10} item className = "cards">
+                <Grid key={11} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/HTML" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -361,7 +458,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={11} item className = "cards">
+                <Grid key={12} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Python" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -392,7 +489,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={12} item className = "cards">
+                <Grid key={13} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/PHP" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>

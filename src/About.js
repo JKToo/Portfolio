@@ -11,7 +11,7 @@ import Grid from "@mui/material/Grid";
 
 function About() {
   return (
-    <div style={{ background: "#F3F6F9", width:"100%"}}>
+    <div style={{ background: "#F2F2F2", width:"100%"}}>
       {/* className="splitScreenAbout" */}
       <Grid sx={{ flexGrow: 1 }} container spacing={1} style={{width:"100%"}}>
 
