@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects"
+import Skills from "./Skills"
 import Certificates from "./Certificates"
 import Side from "./Side"
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
@@ -115,6 +116,12 @@ function App() {
         <div style={{width: "100%"}}>
                  <Home/>
                  
+                 <div  data-aos="fade-up" id="about">            
+
+                    <Skills/>
+                    {/* <div  data-aos="fade-up" style={{paddingBottom: 0}}>
+                    </div> */}
+            </div>  
             <div  data-aos="fade-up" id="about">            
 
                     <About/>
