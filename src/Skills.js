@@ -50,7 +50,10 @@ function Skills() {
         </Grid>
       ))
     }
-    </Grid>           
+    </Grid>     
+    <br/>
+        <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black"}}></hr>
+      
         </div>
         <div style={{ display: "flex" }}>
           <h1 className="categories">Tools</h1>
@@ -79,6 +82,8 @@ function Skills() {
     }
     </Grid>           
         </div>
+<br/>
+        <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black"}}></hr>
 
         <div style={{ display: "flex" }}>
           <h1 className="categories">Frameworks</h1>
