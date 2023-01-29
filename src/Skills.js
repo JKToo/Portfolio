@@ -14,6 +14,9 @@ import python from "./Sources/python_logo.png"
 import vscode from "./Sources/vscode_logo.png"
 import git from "./Sources/git_logo.png"
 import mysql from "./Sources/mysql_logo.png"
+import mui from "./Sources/mui_logo.png"
+import react from "./Sources/react_logo.png"
+import express from "./Sources/nodejs_logo.png"
 
 const Languages = ["Java", "C++", "Python", "HTML", "Javascript", "PHP", "CSS", "Swift", "SQL"]
 const Tools = ["Git", "VSCode", "Visual Studio", "Android Studio", "Xcode", "Netlify", "MySQL", "MongoDB", "PhpMyAdmin", "PowerShell", "Linux", "Figma"]
@@ -32,7 +35,7 @@ function Skills() {
         </div>
 
         <div >
-          <Grid container spacing={5} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}  className="gridLayout" >
+          <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}} >
     {
       Languages.map(row => (
         <Grid item xs={2} >
@@ -52,7 +55,7 @@ function Skills() {
     }
     </Grid>     
     <br/>
-        <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black"}}></hr>
+        <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black", opacity:"0.2"}}></hr>
       
         </div>
         <div style={{ display: "flex" }}>
@@ -67,7 +70,7 @@ function Skills() {
       Tools.map(row => (
         <Grid item xs={2} >
               <Grid container spacing={2}>
-                <Grid item xs={12} sm={13}>
+                <Grid item xs={12} sm={11}>
                   <Grid container >
                     <Grid container justify="space-evenly" >
                       <div className="description">{row}</div>
@@ -83,13 +86,13 @@ function Skills() {
     </Grid>           
         </div>
 <br/>
-        <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black"}}></hr>
+        <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black", opacity:"0.2"}}></hr>
 
         <div style={{ display: "flex" }}>
           <h1 className="categories">Frameworks</h1>
-          <img src={cpp} style={{ width: "90px", height: "70px", marginTop: "10px" }} />
-          <img src={java} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
-          <img src={python} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
+          <img src={react} style={{ width: "90px", height: "70px", marginTop: "10px" }} />
+          <img src={express} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
+          <img src={mui} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
         </div>
         <div>
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}>
