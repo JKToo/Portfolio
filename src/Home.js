@@ -17,10 +17,8 @@ React.useEffect(() => {
   const options = {
       strings: [
       'Software Engineer',
-      'Full Stack Developer',
-      'Android | IOS Developer',     
-      'Information Technician ',
-      'Web Developer'
+      'Cyber Security Specialist',
+      'Developer',    
     ],
     typeSpeed: 50,
     backSpeed: 50,
@@ -42,6 +40,8 @@ return (
     <div className="centerHeader">
         <p>Justin Too</p>
         </div>
+        <div style={{fontSize:"20px"}}> <i>Aspiring</i></div>
+
     <div className="center">
 {/*    
 The MIT License (MIT)
