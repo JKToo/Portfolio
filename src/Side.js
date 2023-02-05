@@ -92,7 +92,7 @@ const Side = () => {
                   </div>
                   <div className='stats'>
                     <h3 style={{color: "rgb(0, 114, 229)"}}>Degree:</h3>
-                    <p className='statanswers'>Associates In Computer Science<br></br>Bachelors (Pursuing)</p>
+                    <p className='statanswers'>Associates In Computer Science<br></br>Bachelors in Computer Science</p>
                   </div>
                   <div className='stats'>
                     <h3 style={{color: "rgb(0, 114, 229)"}}>Hobbies:</h3>

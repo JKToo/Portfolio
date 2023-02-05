@@ -63,10 +63,10 @@ export const History = [
       duration: "May 2022 - Present",
     },
     {
-      date: "2023-06-05",
+      date: "2023-02-01",
       status: "status",
       event: "Hunter College",
-      role: "Expected Graduation",
+      role: "Graduation",
       description: "Bachelors of Arts Computer Science",
       duration: "",
     }
