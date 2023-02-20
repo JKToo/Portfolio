@@ -24,39 +24,70 @@ const Frameworks = ["React", "Express", "Material UI"]
 function Skills() {
   return (
 
-    <div style={{ paddingBottom:"5%" }} className="bodyStyle">
+    <div style={{ paddingBottom: "5%" }} className="bodyStyle">
 
       <div>
-        <div style={{ display: "flex"}}>
+        <div style={{ display: "flex" }}>
           <h1 className="categories">Languages</h1>
           <img src={cpp} style={{ width: "90px", height: "70px", marginTop: "10px" }} />
           <img src={java} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
           <img src={python} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
         </div>
 
-        <div >
-          <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}} >
-    {
-      Languages.map(row => (
-        <Grid item xs={2} >
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={3} >
-                  <Grid container>
-                    <Grid container justify="space-evenly" >
-                      <div className="description">{row}</div>
-                    </Grid>
-                  </Grid>
-                </Grid>
+        <div style={{ width: "75%", marginLeft:"15%" }}>
+            {/* {
+      // Languages.map(row => (
+      //   <Grid item xs={2} >
+      //         <Grid container spacing={2}>
+      //           <Grid item xs={12} sm={3} >
+      //             <Grid container>
+      //               <Grid container justify="space-evenly" >
+      //                 <div className="description">{row}</div>
+      //               </Grid>
+      //             </Grid>
+      //           </Grid>
 
                 
-              </Grid>
-        </Grid>
-      ))
-    }
-    </Grid>     
-    <br/>
-        <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black", opacity:"0.2"}}></hr>
-      
+      //         </Grid>
+      //   </Grid>
+      // ))
+
+    } */}
+
+{/* "Java", "C++", "Python", "HTML", "Javascript", "PHP", "CSS", "Swift", "SQL" */}
+<Grid container spacing={5} style={{}} >
+
+            <Grid item xs={5} sm={1.2} minWidth={"100px"}>
+              <Card className="description">Java</Card>
+            </Grid>
+            <Grid item xs={5} sm={1.2} minWidth={"100px"}>
+            <div className="description">C++</div>
+            </Grid>
+            <Grid item xs={5} sm={1.2} minWidth={"140px"}>
+            <div className="description">Python</div>
+            </Grid>
+            <Grid item xs={5} sm={1.2} minWidth={"120px"}>
+            <div className="description">HTML</div>
+            </Grid>
+            <Grid item xs={6} sm={1.5} minWidth={"150px"}>
+            <div className="description">Javascript</div>
+            </Grid>
+            <Grid item xs={4} sm={1.2} minWidth={"100px"}>
+            <div className="description">PHP</div>
+            </Grid>
+            <Grid item xs={4} sm={1.2} minWidth={"100px"}>
+            <div className="description">CSS</div>
+            </Grid>
+            <Grid item xs={5} sm={1.2} minWidth={"120px"}>
+            <div className="description">Swift</div>
+            </Grid>
+            <Grid item xs={4} sm={1.2} minWidth={"100px"}>
+            <div className="description">SQL</div>
+            </Grid>
+          </Grid>
+          <br />
+          <hr style={{ marginLeft: "10%", marginRight: "10%", borderColor: "black", opacity: "0.2" }}></hr>
+
         </div>
         <div style={{ display: "flex" }}>
           <h1 className="categories">Tools</h1>
@@ -64,29 +95,20 @@ function Skills() {
           <img src={vscode} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
           <img src={mysql} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
         </div>
-        <div>
-          <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}>
-    {
-      Tools.map(row => (
-        <Grid item xs={2} >
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={11}>
-                  <Grid container >
-                    <Grid container justify="space-evenly" >
-                      <div className="description">{row}</div>
-                    </Grid>
-                  </Grid>
-                </Grid>
-
+        <div style={{ width: "75%", marginLeft:"15%" }}>
+          <Grid container spacing={5} style={{}} >
+            {
+              Tools.map(row => (
+                <Grid item xs={5} sm={1.2} minWidth={"150px"}>
+              <Card className="description">{row}</Card>
+            </Grid>
                 
-              </Grid>
-        </Grid>
-      ))
-    }
-    </Grid>           
+              ))
+            }
+          </Grid>
         </div>
-<br/>
-        <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black", opacity:"0.2"}}></hr>
+        <br />
+        <hr style={{ marginLeft: "10%", marginRight: "10%", borderColor: "black", opacity: "0.2" }}></hr>
 
         <div style={{ display: "flex" }}>
           <h1 className="categories">Frameworks</h1>
@@ -94,26 +116,17 @@ function Skills() {
           <img src={express} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
           <img src={mui} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
         </div>
-        <div>
-          <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}>
-    {
-      Frameworks.map(row => (
-        <Grid item xs={2} >
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={13}>
-                  <Grid container>
-                    <Grid container justify="space-evenly">
-                      <div className="description">{row}</div>
-                    </Grid>
-                  </Grid>
-                </Grid>
-
+        <div style={{ width: "75%", marginLeft:"15%" }}>
+          <Grid container spacing={5} style={{}} >
+            {
+              Frameworks.map(row => (
+                <Grid item xs={5} sm={1.2} minWidth={"150px"}>
+              <Card className="description">{row}</Card>
+            </Grid>
                 
-              </Grid>
-        </Grid>
-      ))
-    }
-    </Grid>           
+              ))
+            }
+          </Grid>
         </div>
       </div>
 
