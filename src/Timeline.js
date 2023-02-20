@@ -7,7 +7,7 @@ export default class Timeline extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      curIdx: 0,
+      curIdx: 7,
     };
   }
 

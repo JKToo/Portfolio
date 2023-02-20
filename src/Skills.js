@@ -99,7 +99,7 @@ function Skills() {
           <Grid container spacing={5} style={{}} >
             {
               Tools.map(row => (
-                <Grid item xs={5} sm={1.6} minWidth={"150px"}>
+                <Grid item xs={6} sm={1.6} minWidth={"150px"}>
               <div className="description">{row}</div>
             </Grid>
                 
