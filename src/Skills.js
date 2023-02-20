@@ -58,7 +58,7 @@ function Skills() {
 <Grid container spacing={5} style={{}} >
 
             <Grid item xs={5} sm={1.2} minWidth={"100px"}>
-              <Card className="description">Java</Card>
+              <div className="description">Java</div>
             </Grid>
             <Grid item xs={5} sm={1.2} minWidth={"100px"}>
             <div className="description">C++</div>
@@ -100,7 +100,7 @@ function Skills() {
             {
               Tools.map(row => (
                 <Grid item xs={5} sm={1.2} minWidth={"150px"}>
-              <Card className="description">{row}</Card>
+              <div className="description">{row}</div>
             </Grid>
                 
               ))
@@ -121,7 +121,7 @@ function Skills() {
             {
               Frameworks.map(row => (
                 <Grid item xs={5} sm={1.2} minWidth={"150px"}>
-              <Card className="description">{row}</Card>
+              <div className="description">{row}</div>
             </Grid>
                 
               ))
