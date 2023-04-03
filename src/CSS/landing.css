@@ -7,10 +7,9 @@
 }
 
 .input{
-    width: 30px;
+    width: 28px;
     float:right;
-    margin-top:-4.4px;
-    background-position: right top;
+    margin-top:-5px;
     background-repeat: no-repeat;
     background-size: contain;
 }

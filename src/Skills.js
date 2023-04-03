@@ -33,8 +33,9 @@ function Skills() {
           <img src={java} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
           <img src={python} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
         </div>
+        <AnimatePresence>
 
-        <div >
+        <div data-aos="fade-up" id="about">
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}} >
     {
       Languages.map(row => (
@@ -43,6 +44,7 @@ function Skills() {
                 <Grid item xs={12} sm={3} >
                   <Grid container>
                     <Grid container justify="space-evenly" >
+
                       <div className="description">{row}</div>
                     </Grid>
                   </Grid>
@@ -58,13 +60,16 @@ function Skills() {
         <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black", opacity:"0.2"}}></hr>
       
         </div>
+        </AnimatePresence>
+
         <div style={{ display: "flex" }}>
           <h1 className="categories">Tools</h1>
           <img src={git} style={{ width: "90px", height: "70px", marginTop: "10px" }} />
           <img src={vscode} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
           <img src={mysql} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
         </div>
-        <div>
+        <AnimatePresence>
+        <div data-aos="fade-up" id="about">
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}>
     {
       Tools.map(row => (
@@ -85,6 +90,7 @@ function Skills() {
     }
     </Grid>           
         </div>
+        </AnimatePresence>
 <br/>
         <hr style={{marginLeft:"10%", marginRight:"10%", borderColor:"black", opacity:"0.2"}}></hr>
 
@@ -94,7 +100,8 @@ function Skills() {
           <img src={express} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
           <img src={mui} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
         </div>
-        <div>
+        <AnimatePresence>
+        <div data-aos="fade-up" id="about">
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}>
     {
       Frameworks.map(row => (
@@ -115,6 +122,7 @@ function Skills() {
     }
     </Grid>           
         </div>
+        </AnimatePresence>
       </div>
 
     </div>
