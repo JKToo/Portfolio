@@ -23,10 +23,10 @@ const Landing = () => {
     React.useEffect(() => {
         const options = {
             strings: [
-                "************"
+                "••••••••••••"
             ],
             typeSpeed: 120,
-            loop: false
+            loop: false,
         };
 
         // elRef refers to the <span> rendered below
@@ -45,9 +45,10 @@ const Landing = () => {
                 <div >
                     <img src="user.png" className='userLogo'></img>
                     <p style={{ fontSize: "40px", color: "white", marginLeft: "75px", marginRight: "80px" }}>Justin</p>
-                    <div style={{ backgroundColor: "white", marginTop: "-40px", paddingLeft: "10px", paddingTop: "5px", paddingBottom: "5px" }}>
+                    <div style={{ backgroundColor: "white", marginTop: "-35px", paddingLeft: "10px", paddingTop: "5px", paddingBottom: "5px"}}>
                         <span style={{ whiteSpace: 'pre' }} ref={el} />
-                    <img src="login.png" className='input' />
+                    {/* <img src="login.png" className='input' /> */}
+                    <div style={{float:'right', display:'flex', backgroundColor:"gray", marginTop: '-5px', paddingTop: '4px',paddingBottom: "6px", paddingLeft:'6px', paddingRight:'6px', color:'white'}}>→</div>
 
                     </div>
                 </div>
@@ -55,6 +56,9 @@ const Landing = () => {
 
             <div style={{ marginTop: '-70px', color: "white", float: "left", marginLeft: "10px", display: "flex", backgroundColor: "#1976d2", padding: "3px 5px 3px 5px" }}>
                 <img src="user.png" className='user'></img> <p style={{ marginLeft: "10px" }}>Justin</p>
+            </div>
+            <div style={{ marginTop: '-50px', marginRight:'10px', float: "right", marginLeft: "10px", display: "flex", padding: "3px 5px 3px 5px" }}>
+                <img src="power.png" className='icons'/>
             </div>
         </div>
     );
