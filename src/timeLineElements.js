@@ -57,17 +57,18 @@ export const History = [
       status: "status",
       event: "NYC & Company",
       role: "Information Technician",
-      description: "- Managed Company’s service desk ticketing and troubleshoot any problems regarding their technology",
-      description2: "- Developed & pushed PowerShell scripts for the company’s MDM software to help make deployments & troubleshooting more eficient",
-      description3: "- Worked with Java & Git to develop automated programs for making tasks more automated" ,
+      description: "- Utilize Service Desk ticketing system to provide level 2 technical support for a 150-person company",
+      description2: "- Troubleshoot PCs, iMacs, mobile phones and conference rooms via phone, face-to-face, remotely using NinjaOne, and TeamViewer",
+      description3: "- Develop powershell & bash scripts for  automated pushes with the company’s RMM tool" ,
       duration: "May 2022 - Present",
     },
     {
       date: "2023-02-01",
       status: "status",
       event: "Hunter College",
-      role: "Graduation",
+      role: "Graduated",
       description: "Bachelors of Arts Computer Science",
+      description2: "GPA: 3.66",
       duration: "",
     }
   ];
