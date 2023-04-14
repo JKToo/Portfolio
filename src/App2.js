@@ -17,6 +17,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import ImageSlider from "./ImageSlider";
 import axios from "axios"
+import Footer from "./Footer"
 const { Octokit } = require("@octokit/core");
 
 function AppSecond() {
@@ -131,6 +132,7 @@ function AppSecond() {
         </div>
         </div>
         </AnimatePresence>
+        <Footer/>
     </div>
     </Router>
     )
