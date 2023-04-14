@@ -55,7 +55,7 @@ export const History = [
     {
       date: "2022-06-01",
       status: "status",
-      event: "NYC & Company",
+      event: "New York City Tourism + Conventions",
       role: "Information Technician",
       description: "- Managed Company’s service desk ticketing and troubleshoot any problems regarding their technology",
       description2: "- Developed & pushed PowerShell scripts for the company’s MDM software to help make deployments & troubleshooting more eficient",

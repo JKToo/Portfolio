@@ -16,7 +16,7 @@
 
 .bar-cpp{
     background-color: #007FFF;
-    width: 70%;
+    width: 40%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -28,7 +28,7 @@
 
 .bar-html{
     background-color: #007FFF;
-    width: 50%;
+    width: 30%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -40,7 +40,7 @@
 
 .bar-swift{
     background-color: #007FFF;
-    width: 25%;
+    width: 15%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -52,7 +52,7 @@
 
 .bar-php{
     background-color: #007FFF;
-    width: 30%;
+    width: 20%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -64,7 +64,7 @@
 
 .bar-react{
     background-color: #007FFF;
-    width: 50%;
+    width: 40%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -75,7 +75,7 @@
 }
 .bar-java{
     background-color: #007FFF;
-    width: 60%;
+    width: 45%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -87,7 +87,7 @@
 
 .bar-js{
     background-color: #007FFF;
-    width: 40%;
+    width: 35%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -99,7 +99,7 @@
 
 .bar-python{
     background-color: #007FFF;
-    width: 30%;
+    width: 10%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -111,7 +111,7 @@
 
 .bar-powershell{
     background-color: #007FFF;
-    width: 40%;
+    width: 5%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -124,7 +124,8 @@
 
 .text{
     visibility: hidden;
-    color: #2a2a21;
+    color: #000000;
+    font-size: 10px;
 }
 .bar:hover  {    
     opacity: .8;

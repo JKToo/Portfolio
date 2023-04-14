@@ -38,7 +38,7 @@ function About() {
                     <h3 style={{ display: 'flex' }}>Skills:</h3>
                     <div className='bar'>
                       <div className='bar-cpp' >C++
-                        <div className='text'>Super Effective</div>
+                        <div className='text'>Effective</div>
                       </div>
                     </div>
                     <div className='bar'>
@@ -58,7 +58,7 @@ function About() {
                     </div>
                     <div className='bar'>
                       <div className='bar-swift' >Swift
-                        <div className='text'>Not Effective</div>
+                        <div className='text'>Basic</div>
                       </div>
                     </div>
                     <div className='bar'>
@@ -73,12 +73,12 @@ function About() {
                     </div>
                     <div className='bar'>
                       <div className='bar-python'>Python
-                        <div className='text'>Not Effective</div>
+                        <div className='text'>Basic</div>
                       </div>
                     </div>
                     <div className='bar'>
                       <div className='bar-powershell'>PowerShell
-                        <div className='text'>Not Effective</div>
+                        <div className='text'>Basic</div>
                       </div>
                     </div>
                   </div>
