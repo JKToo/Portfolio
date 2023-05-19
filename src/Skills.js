@@ -19,7 +19,8 @@ import react from "./Sources/react_logo.png"
 import express from "./Sources/nodejs_logo.png"
 
 const Languages = ["Java", "C++", "Python", "HTML", "Javascript", "PHP", "CSS", "Swift", "SQL"]
-const Tools = ["Git", "VSCode", "Visual Studio", "Android Studio", "Xcode", "Netlify", "MySQL", "MongoDB", "PhpMyAdmin", "PowerShell", "Linux", "Figma"]
+const Tools = ["Git", "VSCode", "Visual Studio", "Android Studio", "Xcode", "Netlify", "MySQL", "MongoDB", "PhpMyAdmin", 
+"PowerShell", "Linux", "Figma", "Active Directory", "Sharepoint", "RMM", "MDM"]
 const Frameworks = ["React", "Express", "Material UI"]
 function Skills() {
   return (

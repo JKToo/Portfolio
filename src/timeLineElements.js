@@ -58,8 +58,11 @@ export const History = [
       event: "New York City Tourism + Conventions",
       role: "Information Technician",
       description: "- Utilize Service Desk ticketing system to provide level 2 technical support for a 150-person company",
-      description2: "- Troubleshoot PCs, iMacs, mobile phones and conference rooms via phone, face-to-face, remotely using NinjaOne, and TeamViewer",
+      description2: "- Supervise any threats present through Cisco Secure Endpoint " ,
       description3: "- Develop powershell & bash scripts for  automated pushes with the company’s RMM tool" ,
+      description4: "- Enroll new users through onboarding process as well as enroll users to our MDM tool" ,
+      description5: "- Troubleshoot PCs, iMacs, mobile phones and conference rooms via phone, face-to-face, remotely using NinjaOne, and TeamViewer",
+
       duration: "May 2022 - Present",
     },
     {
