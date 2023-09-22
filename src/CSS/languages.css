@@ -73,6 +73,7 @@
     border-bottom-left-radius: 10px;
     display: flex;
 }
+
 .bar-java{
     background-color: #007FFF;
     width: 45%;
@@ -87,7 +88,7 @@
 
 .bar-js{
     background-color: #007FFF;
-    width: 35%;
+    width: 20%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;

@@ -41,7 +41,7 @@ function App() {
 
             <AnimatePresence>
             {showLanding && <Landing/>}
-            <div  data-aos="fade-up" id="about"> 
+            <div  data-aos="fade-up" > 
             {showComponent && <AppSecond/>}
             </div>
             </AnimatePresence>
