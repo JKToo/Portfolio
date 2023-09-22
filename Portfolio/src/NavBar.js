@@ -38,6 +38,7 @@ useEffect(() => {
         <img src = "/code.png" width="60px" height = "60px" alt = "text"/>
         <ul className = "nav-items">
         <li> <ScrollIntoView selector= "#home">Home</ScrollIntoView></li>
+        <li> <ScrollIntoView selector= "#skills">Skills</ScrollIntoView></li>
         <li> <ScrollIntoView selector= "#about">About</ScrollIntoView> </li>
         <li><ScrollIntoView selector= "#projects">Projects</ScrollIntoView></li>
 

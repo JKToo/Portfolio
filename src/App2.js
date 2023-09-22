@@ -112,17 +112,17 @@ function AppSecond() {
         <div style={{width: "100%"}} >
                  <Home/>
                  
-                 <div  data-aos="fade-up" id="about">            
+                 <div  data-aos="fade-up" id="skills">            
 
                     <Skills/>
-                    {/* <div  data-aos="fade-up" style={{paddingBottom: 0}}>
-                    </div> */}
+                    <div  data-aos="fade-up" style={{paddingBottom: 0}}>
+                    </div>
             </div>  
             <div  data-aos="fade-up" id="about">            
 
                     <About/>
-                    {/* <div  data-aos="fade-up" style={{paddingBottom: 0}}>
-                    </div> */}
+                    <div  data-aos="fade-up" style={{paddingBottom: 0}}>
+                    </div>
             </div>  
 
             <div style={{paddingTop: 200, paddingBottom: 50}} data-aos="fade-up" id="projects">

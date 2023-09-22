@@ -25,7 +25,7 @@ const Frameworks = ["React", "Express", "Material UI"]
 function Skills() {
   return (
 
-    <div style={{ paddingBottom:"5%" }} className="bodyStyle">
+    <div style={{ paddingBottom:"8%", paddingTop:"8%" }} className="bodyStyle">
 
       <div>
         <div style={{ display: "flex"}}>
@@ -36,7 +36,7 @@ function Skills() {
         </div>
         <AnimatePresence>
 
-        <div data-aos="fade-up" id="about">
+        <div data-aos="fade-up">
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}} >
     {
       Languages.map(row => (
@@ -70,7 +70,7 @@ function Skills() {
           <img src={mysql} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
         </div>
         <AnimatePresence>
-        <div data-aos="fade-up" id="about">
+        <div data-aos="fade-up" >
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}>
     {
       Tools.map(row => (
@@ -102,7 +102,7 @@ function Skills() {
           <img src={mui} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
         </div>
         <AnimatePresence>
-        <div data-aos="fade-up" id="about">
+        <div data-aos="fade-up" >
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}>
     {
       Frameworks.map(row => (
