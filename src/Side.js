@@ -64,7 +64,7 @@ const Side = () => {
                 
                 <Card style={{ height: "50%", background: "white", color: "black",boxShadow: "3px 3px 3px #888888",minHeight:300, maxHeight:300 }}>
 
-                <img className='sidenav-img' style={{ marginTop: "10px", width: "40%" }} src={profile}></img>
+                <img className='sidenav-img' style={{ marginTop: "10px", width: "25%", borderRadius:"60%" }} src={profile}></img>
                 <p>Justin Too</p>
                   <div style={{display:"flex", justifyContent:"center"}}>
                     <Button variant="contained" style={{margin:5}} href="https://github.com/JKToo" target="_blank">Github</Button>

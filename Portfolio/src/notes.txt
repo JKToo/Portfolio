@@ -1,3 +1,0 @@
-npm i aos --save   (For animation scroll)
-npm install react-router-dom@5
-npm i react-bootstrap-card (card view)
