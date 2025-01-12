@@ -15,13 +15,14 @@ import vscode from "./Sources/vscode_logo.png"
 import git from "./Sources/git_logo.png"
 import mysql from "./Sources/mysql_logo.png"
 import mui from "./Sources/mui_logo.png"
+import rails from "./Sources/rails.png"
 import react from "./Sources/react_logo.png"
 import express from "./Sources/nodejs_logo.png"
 
-const Languages = ["Java", "C++", "Python", "HTML", "Javascript", "PHP", "CSS", "Swift", "SQL"]
-const Tools = ["Git", "VSCode", "Visual Studio", "Android Studio", "Xcode", "Netlify", "MySQL", "MongoDB", "PhpMyAdmin", 
-"PowerShell", "Linux", "Figma", "Active Directory", "Sharepoint", "RMM", "MDM"]
-const Frameworks = ["React", "Express", "Material UI"]
+const Languages = ["Java", "C++", "Python", "HTML", "Javascript", "Ruby", "PHP", "CSS", "Swift", "SQL"]
+const Tools = ["Git", "VSCode", "Visual Studio", "Android Studio", "Xcode", "Netlify", "MySQL", "MongoDB", "PhpMyAdmin", "Postgres",
+"PowerShell", "Linux", "Figma", "Active Directory", "Sharepoint", "RMM", "MDM", "Azure", "Intune"]
+const Frameworks = ["React", "Ruby on Rails", "Express", "Material UI"]
 function Skills() {
   return (
 
@@ -99,7 +100,7 @@ function Skills() {
           <h1 className="categories">Frameworks</h1>
           <img src={react} style={{ width: "90px", height: "70px", marginTop: "10px" }} />
           <img src={express} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
-          <img src={mui} style={{ width: "90px", height: "70px", marginTop: "10px", marginLeft: "-60px" }} />
+          <img src={rails} style={{ width: "60px", height: "60px", marginTop: "17px", marginLeft: "-50px" }} />
         </div>
         <AnimatePresence>
         <div data-aos="fade-up" >

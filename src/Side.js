@@ -114,7 +114,7 @@ const Side = () => {
             <Card style={{ height: "100%", width: "100%", background: "white",boxShadow: "2px 2px 2px #888888" }}>
               <h2 style={{ justifyContent: "center",  color: "rgb(0, 114, 229)",}}>Featured Github Project </h2>
               <div style={{ justifyContent: "center"}}>
-                <h3>Universal Calculator</h3>
+                <h3>Campus Cravings</h3>
                 <div style={{marginTop:"-10px"}}> <i>Live data feed</i></div><br/>
                 <div>{isLoading ? <Skeleton><div style={{ justifyContent: "left", display:"flex", paddingBottom:"50px"}}>
                     <Card style={{width:"100%", marginLeft:"10px", paddingBottom:"20px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white", boxShadow: "3px 3px 3px #888888"}}>

@@ -26,6 +26,18 @@
     display: flex;
 }
 
+.bar-ruby{
+    background-color: #007FFF;
+    width: 23%;
+    color:white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+}
+
 .bar-html{
     background-color: #007FFF;
     width: 30%;
@@ -52,7 +64,7 @@
 
 .bar-php{
     background-color: #007FFF;
-    width: 20%;
+    width: 17%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -62,9 +74,9 @@
     display: flex;
 }
 
-.bar-react{
+.bar-sql{
     background-color: #007FFF;
-    width: 40%;
+    width: 20%;
     color:white;
     padding-top: 2px;
     padding-bottom: 2px;

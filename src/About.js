@@ -52,8 +52,13 @@ function About() {
                       </div>
                     </div>
                     <div className='bar'>
-                      <div className='bar-php' >PHP/MySQL
+                      <div className='bar-php' >PHP
                         <div className='text'>Effective</div>
+                      </div>
+                    </div>
+                    <div className='bar'>
+                      <div className='bar-ruby' >Ruby
+                        <div className='text'>Basic/Effective</div>
                       </div>
                     </div>
                     <div className='bar'>
@@ -67,8 +72,8 @@ function About() {
                       </div>
                     </div>
                     <div className='bar'>
-                      <div className='bar-react'>React
-                        <div className='text'>Effective</div>
+                      <div className='bar-sql'>SQL
+                        <div className='text'>Basic</div>
                       </div>
                     </div>
                     <div className='bar'>

@@ -20,6 +20,7 @@ import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import pluvio from './Sources/pluvio.png';
+import campus_cravings from './Sources/campus_cravings.png';
 import hexcalc from './Sources/hexadecimalcalculator.png';
 import tictactoe from './Sources/tictactoe.png'
 import {
@@ -48,6 +49,42 @@ return (
             <Grid container justifyContent="center" spacing={3} >
 
             <Grid key={0} item className = "cards">
+                <div className='layout' data-aos="fade-up" >
+                    <CardActionArea href="https://github.com/feizza615/pluvio" target="_blank">
+                        <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888"}}>
+                            <CardHeader
+                                title="Campus Cravings"
+                                subheader="December 12, 2024"
+                            />
+                            <CardMedia
+                                component="img"
+                                height="194"
+                                image={campus_cravings}
+                                alt="Laundry"
+                            />
+                            <CardContent>
+                                <Typography variant="body1" color="text.primary">
+
+                                Web application enabling students to utilize a
+                                delivery service & earn extra income. <br></br>
+                                </Typography><hr />
+                                <Typography variant="body2" color="text.secondary">
+                                    Developed in: <br></br>
+                                    <div style={{ display: 'flex', justifyContent: 'center', padding: 4 }}>
+                                        <div className='js'>Rails</div>
+                                        <div className='js'>Ruby</div>
+                                        <div className='js'>Postgres</div>
+                                        <div className='js'>CSS</div>
+                                        <div className='js'>HTML</div>
+                                    </div>
+                                </Typography>
+                            </CardContent>
+                        </Cards>
+                    </CardActionArea>
+                    </div>
+                </Grid>
+
+            <Grid key={1} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/feizza615/pluvio" target="_blank">
                         <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888"}}>
@@ -81,7 +118,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={1} item className = "cards">
+                <Grid key={2} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Laundry-Reservation" target="_blank">
                         <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888"}}>
@@ -115,7 +152,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={2} item className = "cards">
+                <Grid key={3} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Study-Peer-Discord-Bot" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }} >
@@ -148,7 +185,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={3} item className = "cards">
+                <Grid key={4} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Portfolio" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -181,7 +218,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={4} item className = "cards">
+                <Grid key={5} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Cooking101" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -212,7 +249,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={5} item className = "cards">
+                <Grid key={6} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea className="comingSoon">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -243,7 +280,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={6} item className = "cards">
+                <Grid key={7} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Quizlet_API" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -274,7 +311,7 @@ return (
                     </div>
                 </Grid>
 
-                <Grid key={7} item className = "cards">
+                <Grid key={8} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Hexadecimal_Calculator" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
@@ -304,7 +341,7 @@ return (
                     </CardActionArea>
                     </div>
                 </Grid>
-                <Grid key={7.1} item className = "cards">
+                <Grid key={8.1} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
                     <CardActionArea href="https://github.com/JKToo/Tic-Tac-Toe" target="_blank">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
