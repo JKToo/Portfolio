@@ -50,7 +50,7 @@ return (
 
             <Grid key={0} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
-                    <CardActionArea href="https://github.com/feizza615/pluvio" target="_blank">
+                    <CardActionArea >
                         <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888"}}>
                             <CardHeader
                                 title="Campus Cravings"
