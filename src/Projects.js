@@ -50,11 +50,11 @@ return (
 
             <Grid key={0} item className = "cards">
                 <div className='layout' data-aos="fade-up" >
-                    <CardActionArea >
+                    <CardActionArea href="https://github.com/JKToo/Campus-Cravings" target="_blank">
                         <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888"}}>
                             <CardHeader
                                 title="Campus Cravings"
-                                subheader="December 12, 2024"
+                                subheader="December 12, 2024"                                    
                             />
                             <CardMedia
                                 component="img"
