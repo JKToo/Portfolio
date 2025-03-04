@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./Home";
-import About from "./About";
+import About from "./About_Skills";
 import Projects from "./Projects"
 import Skills from "./Skills"
-import Landing from "./Landing"
-import AppSecond from "./App2"
+import Landing from "./components/Landing"
+import AppSecond from "./App_Main"
 import Certificates from "./Certificates"
 import Side from "./Side"
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
-import NavBar from "./NavBar";
+import NavBar from "./components/NavBar";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import $ from 'jquery';
-import Timeline from "./Timeline";
+import Timeline from "./components/Timeline";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ImageSlider from "./ImageSlider";

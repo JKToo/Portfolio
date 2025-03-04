@@ -1,18 +1,18 @@
 import $ from 'jquery';
 import React, { useState } from 'react';
 import "react-vertical-timeline-component/style.min.css"
-import profile from './Sources/avatar.jpg';
+import profile from '../Sources/avatar.jpg';
 import Card from "@mui/material/Card";
 import axios from "axios"
 import { useEffect } from 'react';
-import Github from "./components/github"
+import Github from "./github"
 import { Octokit } from "@octokit/core"
 import { Skeleton } from "@mui/material";
 import { format } from "date-fns";
 import Button from '@mui/material/Button';
 import Grid from "@mui/material/Grid";
-import Background from "./Sources/windows.png";
-import './CSS/landing.css'
+import Background from "../Sources/windows.png";
+import '../CSS/landing.css'
 import Typed from 'typed.js';
 
 const Landing = () => {
@@ -58,7 +58,7 @@ const Landing = () => {
                 <img src="user.png" className='user'></img> <p style={{ marginLeft: "10px" }}>Justin</p>
             </div>
             <div style={{ marginTop: '-50px', marginRight:'10px', float: "right", marginLeft: "10px", display: "flex", padding: "3px 5px 3px 5px" }}>
-                <img src="power.png" className='icons'/>
+                <img src="../power.png" className='icons'/>
             </div>
         </div>
     );

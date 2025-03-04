@@ -4,7 +4,7 @@ import emoji from './Sources/emoji.gif'
 import Card from "@mui/material/Card";
 import Side from "./Side"
 import axios from "axios"
-import Timeline from "./Timeline";
+import Timeline from "./components/Timeline";
 import { AnimatePresence } from "framer-motion";
 import Grid from "@mui/material/Grid";
 

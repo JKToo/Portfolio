@@ -1,7 +1,7 @@
 import React,{ useEffect }  from 'react';
  import {ReactComponent as WorkIcon} from "./work.svg"
  import {ReactComponent as SchoolIcon} from "./school.svg"
- import timelineElements from "./timeLineElements"
+ import timelineElements from "./components/timeLineElements"
  import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
  import "react-vertical-timeline-component/style.min.css"
  import { useLocation } from "react-router-dom";

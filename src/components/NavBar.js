@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import $ from 'jquery';
 import { useLocation } from "react-router-dom";
 import ScrollIntoView from "react-scroll-into-view";
-import About from './About'
+import About from '../About_Skills'
 
 function refresh(){
   var lZone = $('.left-zone');
