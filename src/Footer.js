@@ -2,7 +2,7 @@ import React, { useEffect }   from 'react';
 import Typed from 'typed.js';
 import './CSS/styles.css';
 import Card from "@mui/material/Card";
-import Side from "./Side"
+import Side from "./About_InfoCards"
 import axios from "axios"
 
 const { Octokit } = require("@octokit/core");
