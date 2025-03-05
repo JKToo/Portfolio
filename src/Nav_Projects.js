@@ -254,7 +254,7 @@ return (
                     <CardActionArea className="comingSoon">
                     <Cards sx={{ minWidth: 340, maxWidth: 350, color:"#0072E5", boxShadow: "1px 2px 2px 2px #888888" }}>
                             <CardHeader
-                                title="Universal Calculator"
+                                title="Omni Tool"
                                 subheader="September 26, 2021"
                             />
                             <CardMedia

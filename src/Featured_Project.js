@@ -8,6 +8,8 @@ import iPad from "./Sources/ipad_model.png"
 import iPhone_Video from "./Sources/iphone_video.mp4"
 import iPad_Video from "./Sources/ipad_video.mp4"
 import { AnimatePresence } from "framer-motion";
+import java from "./Sources/java_logo.png"
+import android_studio from "./Sources/android_studio.png"
 
 function Featured_Project() {
   return (
@@ -32,9 +34,12 @@ function Featured_Project() {
 
             <Grid key={0} item className = "cards">
             <div class="video_model" data-aos="zoom-out" data-aos-duration="3000" style={{ marginTop: "60%" }}>
+              
               <video width="160px" height="340px" style={{ marginTop: "0px", borderRadius: "20px" }} autoPlay loop={true} muted={true}>
                 <source src={iPhone_Video} type="video/mp4" />
               </video>
+              <img src={java} style={{ width: "90px", height: "70px", position: "absolute", zIndex:"1", bottom: "10px", left:"-30px"}} />
+
             </div>
             </Grid>
 
@@ -43,6 +48,8 @@ function Featured_Project() {
               <video width="277px" height="400px" style={{ marginTop: "0px", borderRadius: "20px" }} autoPlay loop={true} muted={true}>
                 <source src={iPad_Video} type="video/mp4" />
               </video>
+              <img src={android_studio} style={{ width: "45px", height: "46px", position: "absolute", zIndex:"1", bottom: "61px", left:"-10px"}} />
+
               </div>
             </Grid>
           </Grid>
