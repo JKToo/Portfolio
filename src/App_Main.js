@@ -13,6 +13,7 @@ import $ from 'jquery';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Footer"
+import Burger from "./components/Burger";
 const { Octokit } = require("@octokit/core");
 
 function AppSecond() {
@@ -29,7 +30,7 @@ function AppSecond() {
             <div className="App">
                 <div id="home"></div>
                 <AnimatePresence>
-                    <NavBar />
+                    <Burger/>
                     <div className="credits">
                         The MIT License (MIT)
 
