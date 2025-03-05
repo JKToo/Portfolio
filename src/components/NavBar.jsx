@@ -45,7 +45,7 @@ const Ul = styled.ul`
 
     @media (max-width: 768px){
       flex-flow: column nowrap;
-      opacity: 0.9;
+      opacity: 0.95;
       justify-content: center;
       border: 1px solid rgba(0, 0, 0, 0.52);
       font-size: 20px;
@@ -54,13 +54,14 @@ const Ul = styled.ul`
       transform: ${({open}) => open ? 'translateX(0)' : 'translateX(-100%)'};
       top: 0;
       left: 0;
-      height: 50vh;
+      height: 100vh;
       width: 200px;
       padding-top: 3.5res;
-      transition: transform 0.8s ease-in-out
+      transition: transform 0.5s ease-in-out;
+      z-index: 10;
 
       li {
-      color: #fff;
+      color: black;
       }
     }
 `;
