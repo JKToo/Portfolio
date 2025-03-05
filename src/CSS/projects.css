@@ -7,7 +7,12 @@
     height: 1000px;
 }
 
-
+.featured_project_title{
+    background: linear-gradient(to right, #298ff6, #9901FF,#9901FF);
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+  }
 
 .card{
     background-color: aliceblue;
@@ -112,4 +117,41 @@
 .cards:hover{
     transition: 0.5s;
     scale: 1.1;
+}
+
+.video_model{
+    background-image: url('../Sources/iphone_model2.png');
+    height: 400px;
+    scale: 1.2;
+    float:center;
+    width: 225px;
+    position: relative;
+background-repeat: no-repeat;
+}
+
+.video_model video {
+    z-index: 1;
+    object-fit: initial;
+    position: absolute;
+    top: 19.1px; /* Adjust top position */
+    left: 15.3px; /* Adjust left position */
+}
+
+
+.video_model_ipad{
+    background-image: url('../Sources/ipad_model.png');
+    height: 500px;
+    scale: 1.2;
+    float:center;
+    width: 310px;
+    position: relative;
+background-repeat: no-repeat;
+}
+
+.video_model_ipad video {
+    z-index: 1;
+    object-fit: initial;
+    position: absolute;
+    top: 19px; /* Adjust top position */
+    left: 23px; /* Adjust left position */
 }

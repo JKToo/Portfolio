@@ -1,30 +1,58 @@
 import React, { useEffect } from 'react';
 import "react-vertical-timeline-component/style.min.css"
-import emoji from './Sources/emoji.gif'
-import Card from "@mui/material/Card";
-import Side from "./About_InfoCards"
-import axios from "axios"
-import Timeline from "./components/Timeline";
-import { AnimatePresence } from "framer-motion";
-import Grid from "@mui/material/Grid";
 import './CSS/skills.css';
-import cpp from "./Sources/cpp_logo.png"
-import java from "./Sources/java_logo.png"
-import python from "./Sources/python_logo.png"
-import vscode from "./Sources/vscode_logo.png"
-import git from "./Sources/git_logo.png"
-import mysql from "./Sources/mysql_logo.png"
-import mui from "./Sources/mui_logo.png"
-import rails from "./Sources/rails.png"
-import react from "./Sources/react_logo.png"
-import express from "./Sources/nodejs_logo.png"
+import Description from "./Sources/Featured_Project.png"
+import Grid from "@mui/material/Grid";
+import iPhone from "./Sources/iphone_model.png"
+import iPad from "./Sources/ipad_model.png"
+import iPhone_Video from "./Sources/iphone_video.mp4"
+import iPad_Video from "./Sources/ipad_video.mp4"
+import { AnimatePresence } from "framer-motion";
 
 function Featured_Project() {
   return (
+    <div style={{ paddingBottom: "8%", paddingTop: "2%" }}>
+      <h1>Featured Project</h1>
 
-    <div style={{ paddingBottom:"8%", paddingTop:"8%" }} >
+      <Grid container justifyContent="center" spacing={2} style={{ width: "100%" }}>
+        <Grid item xs>
 
-     </div>
+          <div data-aos="zoom-out" >
+            <h1 class="featured_project_title" >Omni Tool</h1>
+            <p style={{ fontSize: "30px" }}>A <span style={{ backgroundColor: "rgb(0, 114, 229)", color: "white", padding: "0px 5px 0px 5px" }}>versatile</span> all-in-one app designed to simplify your life. </p>
+          </div>
+          <div data-aos="zoom-out" d ata-aos-duration="3000" >
+            <img src={Description} style={{ marginTop: "5%"}} />
+          </div>
+        </Grid>
+        <Grid item xs >
+        <Grid sx={{ flexGrow: 1 }} container spacing={2}>
+        <Grid item xs={12}>
+            <Grid container justifyContent="center" spacing={3} >
+
+            <Grid key={0} item className = "cards">
+            <div class="video_model" data-aos="zoom-out" data-aos-duration="3000" style={{ marginTop: "60%" }}>
+              <video width="160px" height="340px" style={{ marginTop: "0px", borderRadius: "20px" }} autoPlay loop={true} muted={true}>
+                <source src={iPhone_Video} type="video/mp4" />
+              </video>
+            </div>
+            </Grid>
+
+            <Grid key={1} item className = "cards">
+              <div class="video_model_ipad"  data-aos="zoom-out" data-aos-duration="3000" style={{ marginTop: "25%" }}>
+              <video width="277px" height="400px" style={{ marginTop: "0px", borderRadius: "20px" }} autoPlay loop={true} muted={true}>
+                <source src={iPad_Video} type="video/mp4" />
+              </video>
+              </div>
+            </Grid>
+          </Grid>
+          </Grid>
+          </Grid>
+          </Grid>
+
+      </Grid>
+    </div>
+
   );
 }
 

@@ -112,24 +112,21 @@ const Side = () => {
 
           <div className='layout' data-aos="fade-up" >
             <Card style={{ height: "100%", width: "100%", background: "white",boxShadow: "2px 2px 2px #888888" }}>
-              <h2 style={{ justifyContent: "center",  color: "rgb(0, 114, 229)",}}>Featured Github Project </h2>
+              <h2 style={{ justifyContent: "center",  color: "rgb(0, 114, 229)",}}>Latest Github Activity</h2>
               <div style={{ justifyContent: "center"}}>
-                <h3>Campus Cravings</h3>
+                <h3>Omni Tool</h3>
                 <div style={{marginTop:"-10px"}}> <i>Live data feed</i></div><br/>
                 <div>{isLoading ? <Skeleton><div style={{ justifyContent: "left", display:"flex", paddingBottom:"50px"}}>
-                    <Card style={{width:"100%", marginLeft:"10px", paddingBottom:"20px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white", boxShadow: "3px 3px 3px #888888"}}>
+                    <Card style={{width:"100%",  paddingBottom:"20px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white", boxShadow: "3px 3px 3px #888888"}}>
                       <h3>Recent Commits:</h3>
-
-                      <div style={{paddingRight:"5px"}}>
-                        <div style={{ float: "left", paddingLeft:"10px", }}>
+                      <div style={{ float: "left", marginLeft:"10px", }}>
                         - {commit1}
                         </div><br/>
-                        <div style={{ float: "left",paddingLeft:"10px", }}>
+                        <div style={{ float: "left", marginLeft:"10px", }}>
                         - {commit2}
                         </div><br/>
-                        <div style={{ float: "left",paddingLeft:"7px", paddingRight:"10px"}}>
+                        <div style={{ float: "left",marginLeft:"10px"}}>
                         - {commit3}
-                        </div>
                         </div>
                     </Card>
                     <Card style={{width:"100%", marginLeft:"10px",marginRight:"10px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white",  boxShadow: "3px 3px 3px #888888"}}>
@@ -151,16 +148,12 @@ const Side = () => {
                     <Card style={{width:"50%", marginLeft:"10px", paddingBottom:"20px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white", boxShadow: "3px 3px 3px #888888"}}>
                       <h3>Recent Commits:</h3>
 
-                      <div style={{paddingRight:"5px"}}>
-                        <div style={{ float: "left", paddingLeft:"10px", }}>
+                        <div style={{ textAlign:"start", marginLeft:"20px"}}>
                         - {commit1}
-                        </div><br/>
-                        <div style={{ float: "left",paddingLeft:"10px", }}>
+                        <br/>
                         - {commit2}
-                        </div><br/>
-                        <div style={{ float: "left",paddingLeft:"7px", paddingRight:"10px"}}>
+                        <br/>
                         - {commit3}
-                        </div>
                         </div>
                     </Card>
                     <Card style={{width:"50%", marginLeft:"10px",marginRight:"10px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white",  boxShadow: "3px 3px 3px #888888"}}>
