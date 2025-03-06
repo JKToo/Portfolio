@@ -41,18 +41,11 @@ function Skills() {
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}} >
     {
       Languages.map(row => (
-        <Grid item xs={2} >
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={3} >
-                  <Grid container>
+        <Grid item>
+                <Grid item xs={12} >
                     <Grid container justify="space-evenly" >
-
                       <div className="description">{row}</div>
-                    </Grid>
-                  </Grid>
                 </Grid>
-
-                
               </Grid>
         </Grid>
       ))
@@ -73,19 +66,17 @@ function Skills() {
         <AnimatePresence>
         <div data-aos="fade-up" >
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}>
+
+
+
+
     {
       Tools.map(row => (
-        <Grid item xs={2} >
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={11}>
-                  <Grid container >
+        <Grid item >
+                <Grid item xs={12} >
                     <Grid container justify="space-evenly" >
                       <div className="description">{row}</div>
-                    </Grid>
-                  </Grid>
                 </Grid>
-
-                
               </Grid>
         </Grid>
       ))
@@ -107,17 +98,11 @@ function Skills() {
           <Grid container spacing={3} style={{width:"75%", marginRight:"15%", marginLeft:"15%"}}>
     {
       Frameworks.map(row => (
-        <Grid item xs={2} >
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={13}>
-                  <Grid container>
+        <Grid item>
+                <Grid item xs={12}>
                     <Grid container justify="space-evenly">
                       <div className="description">{row}</div>
-                    </Grid>
-                  </Grid>
                 </Grid>
-
-                
               </Grid>
         </Grid>
       ))

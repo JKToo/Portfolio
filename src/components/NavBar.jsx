@@ -42,6 +42,7 @@ const Ul = styled.ul`
       padding: 30px;
     }
 
+ 
 
     @media (max-width: 768px){
       flex-flow: column nowrap;
@@ -63,6 +64,8 @@ const Ul = styled.ul`
       li {
       color: black;
       }
+  
+
     }
 `;
 
