@@ -116,7 +116,9 @@ const Side = () => {
               <div style={{ justifyContent: "center"}}>
                 <h3>Omni Tool</h3>
                 <div style={{marginTop:"-10px"}}> <i>Live data feed</i></div><br/>
-                <div>{isLoading ? <Skeleton><div style={{ justifyContent: "left", display:"flex", paddingBottom:"50px"}}>
+                <div>{isLoading ? 
+                  <Skeleton>
+                    <div style={{ justifyContent: "left", display:"flex", paddingBottom:"50px"}}>
                     <Card style={{width:"100%",  paddingBottom:"20px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white", boxShadow: "3px 3px 3px #888888"}}>
                       <h3>Recent Commits:</h3>
                       <div style={{ float: "left", marginLeft:"10px", }}>
@@ -142,8 +144,12 @@ const Side = () => {
                       </div>
                       </div>
                     </Card>
-                  </div></Skeleton>: <>
+                  </div></Skeleton>
                   
+                  : 
+                  
+                  <>
+
                   <div style={{ justifyContent: "left", display:"flex", paddingBottom:"50px"}}>
                     <Card style={{width:"50%", marginLeft:"10px", paddingBottom:"20px", background: "linear-gradient(to right bottom, #007FFF, #0059B2) 120%", color:"white", boxShadow: "3px 3px 3px #888888"}}>
                       <h3>Recent Commits:</h3>

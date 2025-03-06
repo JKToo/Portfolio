@@ -17,9 +17,9 @@ const Footer = ( ) => {
 
             <p style={{color:"white"}}>Made with</p>
             <div style={{display:'flex', justifyContent:'center', marginTop:"-10px"}}>
-            <p style={{color:"white", backgroundColor:"#1976d2",  padding:'5px', borderRadius:'6px'}}>React.js</p>
+            <p style={{color:"white", backgroundColor:"#1976d2",  padding:'5px', borderRadius:'6px'}}>ReactJS</p>
             <p style={{color:"white", backgroundColor:"#1976d2", marginLeft:"15px", padding:'5px', borderRadius:'6px'}}>Material UI</p>
-            <p style={{color:"white", backgroundColor:"#1976d2", marginLeft:"15px", padding:'5px', borderRadius:'6px'}}>Typed.js</p>
+            <p style={{color:"white", backgroundColor:"#1976d2", marginLeft:"15px", padding:'5px', borderRadius:'6px'}}>TypedJS</p>
             </div>
         </div>
     </div>
