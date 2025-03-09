@@ -6,23 +6,24 @@ import Grid from "@mui/material/Grid";
 
 function Featured_Project() {
     return (
-<div style={{scale:"0.8"}} >
+<div class="featured_project_size">
 
 <div class="pstatus">
 
-<Timeline minEvents={5} placeholder variant="" >
+<Timeline minEvents={4} placeholder={true} variant=""  class="testTimeline" style={{scale:"0.5"}}>
+    
   <TimelineEvent
+
     color='#146CF6'
     icon={FaRegFileAlt}
     title='Plan'
-    
   />
+
   <TimelineEvent
     color='#188AF0'
     icon={FaBuffer}
     title='Design'
   />
-
   <TimelineEvent
     color='#00B7D8'
     icon={FaGithub}
@@ -35,7 +36,6 @@ function Featured_Project() {
     title='Beta'
 
   />
-
 
    <TimelineEvent
 //    color='#00D54B'
