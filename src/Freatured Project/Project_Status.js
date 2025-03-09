@@ -10,7 +10,7 @@ function Featured_Project() {
 
 <div class="pstatus">
 
-<Timeline minEvents={4} placeholder={true} variant=""  class="testTimeline" style={{scale:"0.5"}}>
+<Timeline minEvents={4} placeholder={true} variant=""  >
     
   <TimelineEvent
 
