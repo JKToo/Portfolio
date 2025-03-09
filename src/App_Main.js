@@ -4,7 +4,7 @@ import Home from "./Nav_Home";
 import About from "./Nav_About_Skills";
 import Projects from "./Nav_Projects"
 import Skills from "./Nav_Skills"
-import Featured_Project from "./Featured_Project"
+import Featured_Project from "./Freatured Project/Featured_Project"
 import Certificates from "./Certificates"
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import NavBar from "./components/NavBar";

@@ -56,11 +56,10 @@ const Ul = styled.ul`
       top: 0;
       left: 0;
       height: 100vh;
-      width: 200px;
+      width: 50%;
       padding-top: 3.5res;
       transition: transform 0.5s ease-in-out;
-      z-index: 10;
-
+      z-index: 101;
       li {
       color: black;
       }
