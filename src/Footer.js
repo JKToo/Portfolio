@@ -1,29 +1,83 @@
-import React, { useEffect }   from 'react';
-import Typed from 'typed.js';
-import './CSS/styles.css';
-import Card from "@mui/material/Card";
-import Side from "./About_InfoCards"
-import axios from "axios"
+import { motion } from "framer-motion";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+import CodeIcon from "@mui/icons-material/Code";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import "./CSS/footer.css";
 
-const { Octokit } = require("@octokit/core");
+const socialLinks = [
+  { icon: <GitHubIcon sx={{ fontSize: 20 }} />, href: "https://github.com/JKToo", label: "GitHub" },
+  { icon: <LinkedInIcon sx={{ fontSize: 20 }} />, href: "https://www.linkedin.com/in/justin-k-too/", label: "LinkedIn" },
+  { icon: <EmailIcon sx={{ fontSize: 20 }} />, href: "mailto:justinktoo1998@gmail.com", label: "Email" },
+];
 
+const techStack = ["React", "TypeScript", "Material UI", "Framer Motion"];
 
-const Footer = ( ) => {
-    return(
-    <div style={{backgroundColor:"black", width:'100%', fontSize:'15px'}}>
-        <div style={{paddingTop:'30px', paddingBottom:'20px'}}>
-        <img src="footer_git.png" height="50px" widght="50px"/>
-        <img src="linkedin.png" height="50px" widght="50px"/>
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
 
-            <p style={{color:"white"}}>Made with</p>
-            <div style={{display:'flex', justifyContent:'center', marginTop:"-10px"}}>
-            <p style={{color:"white", backgroundColor:"#1976d2",  padding:'5px', borderRadius:'6px'}}>ReactJS</p>
-            <p style={{color:"white", backgroundColor:"#1976d2", marginLeft:"15px", padding:'5px', borderRadius:'6px'}}>Material UI</p>
-            <p style={{color:"white", backgroundColor:"#1976d2", marginLeft:"15px", padding:'5px', borderRadius:'6px'}}>TypedJS</p>
-            </div>
-        </div>
-    </div>
-);
-}
+  return (
+    <footer className="portfolio-footer">
+      <div className="footer-inner">
+        <motion.div
+          initial={{ opacity: 0, y: 12, filter: "blur(4px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="footer-top"
+        >
+          <div className="footer-tagline">
+            <h3>Let's connect</h3>
+            <p>Open to opportunities, collaborations, and interesting conversations.</p>
+          </div>
 
-  export default Footer;
+          <div className="footer-socials">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.label}
+                className="footer-social-link"
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
+        </motion.div>
+
+        <div className="footer-divider" />
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="footer-bottom"
+        >
+          <div className="footer-tech">
+            <CodeIcon sx={{ fontSize: 14 }} className="footer-tech-icon" />
+            <span>Built with</span>
+            {techStack.map((tech, i) => (
+              <span key={tech} style={{ display: "flex", alignItems: "center", gap: "0.375rem" }}>
+                <span className="footer-tech-name">{tech}</span>
+                {i < techStack.length - 1 && (
+                  <span className="footer-tech-dot">·</span>
+                )}
+              </span>
+            ))}
+          </div>
+
+          <p className="footer-copyright">
+            © {currentYear} — Made with
+            <FavoriteIcon sx={{ fontSize: 12 }} className="footer-heart" />
+          </p>
+        </motion.div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
