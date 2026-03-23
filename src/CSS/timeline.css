@@ -13,3 +13,374 @@
     font-size: 18px;
     color: black;
 }
+
+
+.timeline-section {
+  width: 100%;
+  max-width: 95rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.timeline-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1f2e;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.timeline-header p {
+  margin-top: 0.75rem;
+  color: #6b7280;
+  font-size: 1.125rem;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.timeline-arrow:hover {
+  color: #1a1f2e;
+}
+
+.timeline-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.timeline-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.timeline-arrow--left {
+  left: -4px;
+}
+
+.timeline-arrow--right {
+  right: -4px;
+}
+
+.timeline-scroll {
+  margin: 0 1.5rem;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.timeline-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.timeline-grid {
+  min-width: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+}
+
+.timeline-cell-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.timeline-cell-dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+}
+
+.timeline-cell-bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.timeline-line-segment {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-line-segment-inner {
+  width: 100%;
+  height: 1px;
+  background: #a7d8cc;
+}
+
+.timeline-dot-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0;
+}
+
+.timeline-dot--past {
+  background: #007FFF;
+}
+
+.timeline-dot--future {
+  background: #d1d5db;
+}
+
+.timeline-dot--active {
+  transform: scale(1.5);
+}
+
+.timeline-dot:hover {
+  transform: scale(1.2);
+}
+
+.timeline-dot--active:hover {
+  transform: scale(1.5);
+}
+
+.timeline-pulse-ring {
+  position: absolute;
+  inset: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(42, 157, 143, 0.25);
+  animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulseRing {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+.minicard {
+  cursor: pointer;
+}
+
+.minicard--top {
+  margin-bottom: 0.75rem;
+}
+
+.minicard--bottom {
+  margin-top: 0.75rem;
+}
+
+.minicard-inner {
+  width: 11rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.minicard-inner:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.minicard-inner:active {
+  transform: scale(0.98);
+}
+
+.minicard-inner--active {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), 0 8px 32px rgba(0, 0, 0, 0.06);
+  outline: 2px solid rgba(42, 157, 143, 0.2);
+}
+
+.minicard-date {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #007FFF;
+  background: rgba(42, 157, 143, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.minicard-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1a1f2e;
+  line-height: 1.3;
+  margin: 0 0 2px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.minicard-subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.minicard-duration {
+  margin-left: 4px;
+  opacity: 0.6;
+}
+
+.minicard-connector {
+  display: flex;
+  justify-content: center;
+}
+
+.minicard-connector--top {
+  margin-top: 4px;
+}
+
+.minicard-connector--bottom {
+  margin-bottom: 4px;
+  order: -1;
+}
+
+.minicard-connector-line {
+  width: 1px;
+  height: 1rem;
+  background: #007FFF;
+}
+
+.expanded-wrapper {
+  margin-top: 3rem;
+  min-height: 220px;
+}
+
+.expanded-card {
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.expanded-thumbnail {
+  margin-bottom: 1rem;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.expanded-thumbnail img {
+  width: 100%;
+  height: 9rem;
+  object-fit: cover;
+}
+
+.expanded-date {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #007FFF;
+  background: rgba(42, 157, 143, 0.1);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.expanded-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1f2e;
+  line-height: 1.3;
+  margin: 0 0 4px 0;
+}
+
+.expanded-role {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 0.75rem 0;
+}
+
+.expanded-duration-badge {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.expanded-descriptions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.expanded-descriptions li {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.expanded-bullet {
+  margin-top: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(42, 157, 143, 0.4);
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .timeline-section { padding: 6rem 1rem; }
+  .timeline-header h1 { font-size: 3rem; }
+}

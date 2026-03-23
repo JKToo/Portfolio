@@ -1,40 +1,34 @@
 import React, { useEffect } from 'react';
-import php from './Sources/php.png'
-import java from './Sources/java.png'
-import cooking101 from './Sources/cooking101.png'
 import './CSS/projects.css';
-import cpp from './Sources/cpp.png'
-import laundry from './Sources/laundry.png'
-import studypeer from './Sources/studypeer.png'
-import portfolio from './Sources/portfolio.png'
-import html from './Sources/html.png'
-import quizlet from './Sources/quizlet.png'
-import calculator from './Sources/calculator.png'
-import python from './Sources/python.png'
-import car from './Sources/car.png'
-import Cards from "@mui/material/Card"
-import Avatar from "@mui/material/Avatar";
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
+import {
+  Card as Cards,
+  CardHeader,
+  CardMedia,
+  CardContent,
+  CardActionArea,
+  Typography,
+} from '@mui/material';
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+// Your images
+import php from './Sources/php.png';
+import java from './Sources/java.png';
+import cooking101 from './Sources/cooking101.png';
+import cpp from './Sources/cpp.png';
+import laundry from './Sources/laundry.png';
+import studypeer from './Sources/studypeer.png';
+import portfolio from './Sources/portfolio.png';
+import html from './Sources/html.png';
+import quizlet from './Sources/quizlet.png';
+import calculator from './Sources/calculator.png';
+import python from './Sources/python.png';
+import car from './Sources/car.png';
 import pluvio from './Sources/pluvio.png';
 import campus_cravings from './Sources/campus_cravings.png';
 import hexcalc from './Sources/hexadecimalcalculator.png';
-import tictactoe from './Sources/tictactoe.png'
-import {
-Card,
-CardBlock,
-CardFooter,
-CardTitle,
-CardText,
-CardImg,
-} from 'react-bootstrap-card';
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { CardActionArea } from '@mui/material';
-
+import tictactoe from './Sources/tictactoe.png';
 function Projects() {
 useEffect(() => {
 Aos.init({ duration: 2000 });
