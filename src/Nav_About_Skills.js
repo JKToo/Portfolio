@@ -7,11 +7,12 @@ import axios from "axios"
 import Timeline from "./components/Timeline";
 import { AnimatePresence } from "framer-motion";
 import Grid from "@mui/material/Grid";
+import "./CSS/about.css";
 
 
 function About() {
   return (
-    <div style={{ background: "#F2F2F2", width:"100%"}}>
+    <div style={{width:"100%"}} >
       {/* className="splitScreenAbout" */}
       <Grid sx={{ flexGrow: 1 }} container spacing={1} style={{width:"100%"}}>
 
