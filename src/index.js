@@ -11,6 +11,7 @@ import './CSS/landing.css'
 import './CSS/side.css'
 import {BrowserRouter} from 'react-router-dom'
 import $ from 'jquery';
+import './index.css';
 //import reportWebVitals from './reportWebVitals';
 
 var lZone = $('.left-zone');

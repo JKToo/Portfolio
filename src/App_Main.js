@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./Nav_Home";
-import About from "./Nav_About_Skills";
+import About from "./components/AboutSection";
 import Projects from "./Nav_Projects"
 import Skills from "./Nav_Skills"
 import Featured_Project from "./Freatured Project/Featured_Project"
@@ -114,7 +114,7 @@ function AppSecond() {
                                 <div data-aos="fade-up" style={{ paddingBottom: 0 }}>
                                 </div>
                             </div>
-                            <div data-aos="fade-up" id="about">
+                            <div data-aos="fade-up" id="about" >
                                 <About />
                                 <div data-aos="fade-up" style={{ paddingBottom: 0 }}>
                                 </div>
