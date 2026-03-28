@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./CSS/home.css";
+// import "./index.css"
 
 const roles = ["Software Engineer", "Cyber Security Specialist", "Developer", "Systems Administrator"];
 
@@ -43,19 +44,19 @@ const TypingAnimation = () => {
 };
 
 /* ── Floating Shapes ── */
-const FloatingShapes = () => (
-  <div className="floating-shapes">
-    <div className="scan-line" />
-    <div className="shape shape-square float-anim" style={{ top: "15%", right: "10%", transform: "rotate(45deg)" }} />
-    <div className="shape shape-circle float-reverse" style={{ top: "60%", right: "20%" }} />
-    <div className="shape shape-square-sm float-reverse" style={{ top: "30%", left: "5%", transform: "rotate(12deg)" }} />
-    <div className="shape shape-dot-accent float-anim" style={{ bottom: "20%", left: "15%" }} />
-    <div className="shape shape-dot float-anim" style={{ top: "10%", left: "40%" }} />
-    <div className="shape shape-dot-sm float-reverse" style={{ top: "70%", right: "40%" }} />
-    <div className="corner-tl" />
-    <div className="corner-br" />
-  </div>
-);
+// const FloatingShapes = () => (
+//   <div className="floating-shapes">
+//     <div className="scan-line" />
+//     <div className="shape shape-square float-anim" style={{ top: "15%", right: "10%", transform: "rotate(45deg)" }} />
+//     <div className="shape shape-circle float-reverse" style={{ top: "60%", right: "20%" }} />
+//     <div className="shape shape-square-sm float-reverse" style={{ top: "30%", left: "5%", transform: "rotate(12deg)" }} />
+//     <div className="shape shape-dot-accent float-anim" style={{ bottom: "20%", left: "15%" }} />
+//     <div className="shape shape-dot float-anim" style={{ top: "10%", left: "40%" }} />
+//     <div className="shape shape-dot-sm float-reverse" style={{ top: "70%", right: "40%" }} />
+//     <div className="corner-tl" />
+//     <div className="corner-br" />
+//   </div>
+// );
 
 const CodeSnippet = () => (
   <motion.div
@@ -71,10 +72,10 @@ const CodeSnippet = () => (
       <span className="code-title">~/justin-too</span>
     </div>
     <div className="code-body">
-      <div style={{float:"left"}} ><span className="c-accent">const</span> <span className="c-primary">developer</span> <span className="c-muted">=</span> <span className="c-muted">{"{"}</span></div> <br/>
-      <div style={{float:"left"}} className="indent"><span className="c-green">name</span><span className="c-muted">:</span> <span className="c-yellow">'Justin Too'</span><span className="c-muted">,</span></div><br/>
-      <div style={{float:"left"}} className="indent"><span className="c-green">passion</span><span className="c-muted">:</span> <span className="c-yellow">'Building things'</span><span className="c-muted">,</span></div><br/>
-      <div style={{float:"left"}} className="indent"><span className="c-green">coffee</span><span className="c-muted">:</span> <span className="c-accent">true</span><span className="c-muted">,</span></div><br/>
+      <div style={{float:"left"}} ><span className="c-accent">Developer developer</span> <span className="c-primary">= new</span> <span className="c-accent">Developer</span><span className="c-muted">{" {"}</span></div> <br/>
+      <div style={{float:"left"}} className="indent"><span className="c-green">"Justin Too"</span><span className="c-muted">,</span><span className="c-muted indent" > // name</span></div><br/>
+      <div style={{float:"left"}} className="indent"><span className="c-green">"Building Things"</span><span className="c-muted">,</span><span className="c-muted indent">// passion</span></div><br/>
+      <div style={{float:"left"}} className="indent"><span className="c-green">true</span><span className="c-muted">,</span><span className="c-muted indent">// coffee</span></div><br/>
       <div style={{float:"left"}} ><span className="c-muted">{"}"}</span><span className="c-muted">;</span></div>
     </div>
   </motion.div>
@@ -82,7 +83,7 @@ const CodeSnippet = () => (
 
 const statItems = [
   { label: "STATUS", value: "AVAILABLE", colorClass: "c-green" },
-  { label: "LOCATION", value: "EARTH", colorClass: "c-primary" },
+  { label: "LOCATION", value: "NYC", colorClass: "c-primary" },
   { label: "FOCUS", value: "FULL-STACK", colorClass: "c-accent" },
 ];
 
@@ -108,7 +109,7 @@ const StatusBar = () => (
 const Nav_Home = () => {
   return (
     <section className="home-section">
-      <FloatingShapes />
+      {/* <FloatingShapes /> */}
 
       <div className="home-container">
         {/* Left: Text */}

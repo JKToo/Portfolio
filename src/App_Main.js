@@ -3,6 +3,8 @@ import "./App.css";
 import Home from "./Nav_Home";
 import About from "./Nav_About_Skills";
 import Projects from "./Nav_Projects"
+import AboutSection from "./About_Section";
+import ProjectsSection from "./ProjectSection";
 import Skills from "./Nav_Skills"
 import Featured_Project from "./Freatured Project/Featured_Project"
 import Certificates from "./Certificates"
@@ -115,7 +117,7 @@ function AppSecond() {
                                 </div>
                             </div>
                             <div data-aos="fade-up" id="about">
-                                <About />
+                                <AboutSection />
                                 <div data-aos="fade-up" style={{ paddingBottom: 0 }}>
                                 </div>
                             </div>
@@ -126,7 +128,8 @@ function AppSecond() {
                             </div>
 
                             <div style={{ paddingTop: 200, paddingBottom: 50 }} data-aos="fade-up" id="projects">
-                                <Projects />
+                                {/* <Projects /> */}
+                                <ProjectsSection/>
                             </div>
 
                         </div>

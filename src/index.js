@@ -22,6 +22,7 @@ $(window).on('scroll', function() {
 
 ReactDOM.render(
    <BrowserRouter>
+   {/* <p className="text-red-500 text-3xl font-bold">If you see this in red, Tailwind works!</p> */}
     <App/>
     </BrowserRouter>, 
     document.getElementById('root')

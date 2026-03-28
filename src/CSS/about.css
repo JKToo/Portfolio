@@ -1,49 +1,318 @@
-.bg{
-    /* background-image: url("../Sources/background.jpg"); */
-    margin-left: 10px;
-    border-radius: 10px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.splitScreenAbout {
-    display: flex;
-    flex-direction: row;    
-    height:100%;
-    padding-top: 60px;
+/* ── About Section ── */
+.about-section {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(hsla(175, 80%, 50%, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsla(175, 80%, 50%, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
-
-.header{
-    font-family: "Poppins";
-    color: rgba(255, 255, 255, 0);
-    text-shadow: -1px -1px 0 #c0bfbfc4, 1px -1px 0 rgb(36, 222, 219), -1px 1px 0 rgb(78, 78, 78), 1px 1px 0 rgb(235, 206, 47);
-
+.about-corner-tl {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-left: 2px solid hsla(175, 80%, 50%, 0.1);
+  border-top: 2px solid hsla(175, 80%, 50%, 0.1);
 }
 
-.font{
-    
-    color: #eeeef2;;
-    font-size: 20px;
-}
-.emoji{
-    width:20%
-}
-
-body{
-    font-family: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    
+.about-corner-br {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-right: 2px solid hsla(175, 80%, 50%, 0.1);
+  border-bottom: 2px solid hsla(175, 80%, 50%, 0.1);
 }
 
-
-.resizer{
-    width: 50%
+.about-container {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-@media screen and (max-width: 640px){
-	/* Mobile Responsiveness CSS here */
-	.resizer{
-        width: 100%
+/* Header */
+.about-header {
+  margin-bottom: 4rem;
+}
 
-    }
+.about-prompt {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.about-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+
+@media (min-width: 768px) {
+  .about-title { font-size: 3rem; }
+}
+
+.about-title-glow {
+  color: var(--primary);
+  text-shadow: 0 0 20px hsla(175, 80%, 50%, 0.5), 0 0 40px hsla(175, 80%, 50%, 0.2);
+}
+
+/* Grid layout */
+.about-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Terminal card */
+.about-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px hsla(175, 80%, 50%, 0.15), inset 0 0 15px hsla(175, 80%, 50%, 0.05);
+}
+
+.about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: hsla(220, 16%, 14%, 0.5);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-card-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.about-card-header .dot-red    { background: hsla(0, 70%, 55%, 0.7); }
+.about-card-header .dot-yellow { background: hsla(45, 90%, 60%, 0.7); }
+.about-card-header .dot-green  { background: hsla(142, 70%, 55%, 0.7); }
+
+.about-card-path {
+  margin-left: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.about-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Profile header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: hsla(175, 80%, 50%, 0.1);
+  border: 2px solid hsla(175, 80%, 50%, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-avatar svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--primary);
+}
+
+.profile-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0;
+}
+
+.profile-role {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--primary);
+  margin: 0;
+}
+
+/* Info items */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+.info-item svg {
+  width: 1rem;
+  height: 1rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.info-label {
+  color: var(--muted);
+}
+
+.info-value {
+  color: var(--fg);
+}
+
+/* Education box */
+.edu-box {
+  background: hsla(220, 16%, 14%, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid hsla(220, 14%, 16%, 0.5);
+}
+
+.edu-comment {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.edu-box p {
+  font-size: 0.875rem;
+  color: var(--fg);
+  margin: 0.25rem 0;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--secondary-bg);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--fg);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.social-link svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.social-link:hover {
+  border-color: hsla(175, 80%, 50%, 0.5);
+  color: var(--primary);
+}
+
+.social-link-accent:hover {
+  border-color: hsla(280, 70%, 60%, 0.5);
+  color: var(--accent);
+}
+
+/* Skills */
+.skills-comment {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.skills-comment span {
+  color: var(--green);
+}
+
+.skill-row {
+  margin-bottom: 1rem;
+}
+
+.skill-name {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--fg);
+  margin-bottom: 0.375rem;
+}
+
+.skill-track {
+  height: 0.5rem;
+  background: var(--secondary-bg);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transition: width 1s ease-out;
+}
+
+.bar-cpp        { width: 90%; }
+.bar-java       { width: 85%; }
+.bar-html       { width: 85%; }
+.bar-js         { width: 80%; }
+.bar-php        { width: 70%; }
+.bar-ruby       { width: 60%; }
+.bar-sql        { width: 65%; }
+.bar-python     { width: 55%; }
+.bar-swift      { width: 50%; }
+.bar-powershell { width: 45%; }
+
+.skills-done {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--green);
+  margin-top: 1rem;
+}
+
+.profile-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: hsla(175, 80%, 50%, 0.1);
+  border: 2px solid hsla(175, 80%, 50%, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* IMPORTANT */
 }
