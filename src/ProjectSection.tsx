@@ -9,8 +9,9 @@ const projects = [
     title: "Campus Cravings",
     date: "December 12, 2024",
     description:
-      "Full-stack delivery platform connecting students with local food options, allowing users to place orders while enabling others to earn income as campus-based drivers.",
+      "Full-stack delivery web-based platform connecting students with local food options, allowing users to place orders while enabling others to earn income as campus-based drivers.",
     tech: ["Rails", "Ruby", "Postgres", "CSS", "HTML"],
+    link: "https://github.com/JKToo/Campus-Cravings",
   },
   {
     title: "Pluvio",
@@ -18,6 +19,7 @@ const projects = [
     description:
       "Social media platform centered around movies, featuring user profiles, reviews, and an AI-powered recommendation system to personalize content discovery.",
     tech: ["MongoDB", "Express", "React", "NodeJS", "Jupyter"],
+    link: "https://github.com/JKToo/pluvio",
   },
   {
     title: "First Come First Serve",
@@ -25,6 +27,7 @@ const projects = [
     description:
       "Client-focused web development project where I led a team, gathered requirements through direct interviews, and delivered a tailored website solution based on business needs.",
     tech: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
+    link: "https://github.com/JKToo/Laundry-Reservation",
   },
   {
     title: "Study Peer",
@@ -32,13 +35,15 @@ const projects = [
     description:
       "Interactive Discord bot designed to assist with studying, offering language translation, quizzes, and automated learning tools through API integrations.",
     tech: ["Python", "REST API"],
+    link: "https://github.com/JKToo/Study-Peer-Discord-Bot",
   },
   {
     title: "Portfolio Website",
     date: "April, 2020",
     description:
       "Personal portfolio website built with React, showcasing projects, skills, and experience with a focus on responsive design and modern UI/UX.",
-    tech: ["HTML", "CSS", "Javascript", "React"],
+    tech: ["HTML", "CSS", "Javascript", "React", "Tailwind"],
+    link: "https://github.com/JKToo/Portfolio",
   },
   {
     title: "Cooking101",
@@ -46,6 +51,7 @@ const projects = [
     description:
       "Recipe-sharing platform where users can browse, upload, and follow step-by-step cooking guides, with a focus on user-friendly navigation and content organization.",
     tech: ["React", "Node.js", "MongoDB"],
+    link: "https://github.com/JKToo/Cooking101",
   },
   {
     title: "ZuKit",
@@ -53,6 +59,7 @@ const projects = [
     description:
       "Multi-functional utility tool offering various calculators and unit conversions within a single, streamlined interface for everyday problem solving.",
     tech: ["JavaScript", "HTML", "CSS"],
+    link: "",
   },
   {
     title: "Quizlet API",
@@ -60,6 +67,7 @@ const projects = [
     description:
       "Integrated Quizlet’s API to build a flashcard-based learning system, enabling users to access, create, and study sets programmatically.",
     tech: ["Python", "REST API"],
+    link: "https://github.com/JKToo/Quizlet_API",
   },
   {
     title: "Hexadecimal Calculator",
@@ -67,6 +75,7 @@ const projects = [
     description:
       "Web-based calculator supporting hexadecimal arithmetic, designed to simplify base-16 operations for developers and students.",
     tech: ["JavaScript", "HTML", "CSS"],
+    link: "https://github.com/JKToo/Hexadecimal_Calculator",
   },
   {
     title: "Tic Tac Toe",
@@ -74,6 +83,7 @@ const projects = [
     description:
       "Classic Tic Tac Toe game featuring an AI opponent with basic decision-making logic, providing an interactive and responsive gameplay experience.",
     tech: ["JavaScript", "HTML", "CSS"],
+    link: "https://github.com/JKToo/Tic-Tac-Toe",
   },
 ];
 
@@ -123,10 +133,15 @@ const ProjectsSection = () => {
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 projects-grid"
         >
           {projects.map((project) => (
+            <a key={project.title}
+               href={project.link}
+               target="_blank" 
+               
+            >
             <motion.div
               key={project.title}
               variants={itemVariants}
-              className="project-card group bg-card border border-border rounded-lg overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.1)]"
+              className="h-full project-card group bg-card border border-border rounded-lg overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.1)]"
             >
               {/* Terminal header */}
               <div className="flex items-center gap-2 px-4 py-2.5 bg-secondary/50 border-b border-border">
@@ -148,7 +163,7 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Description */}
-                <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed text-left">{project.description}</p>
 
                 {/* Divider */}
                 <div className="h-px bg-border" />
@@ -171,6 +186,7 @@ const ProjectsSection = () => {
                 </div>
               </div>
             </motion.div>
+            </a>
           ))}
         </motion.div>
       </div>

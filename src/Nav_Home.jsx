@@ -72,12 +72,12 @@ const CodeSnippet = () => (
       <span className="code-title">~/justin-too</span>
     </div>
     <div className="code-body">
-      <div style={{float:"left"}} ><span className="c-accent">Developer developer</span> <span className="c-primary">= new</span> <span className="c-accent">Developer</span><span className="c-muted">{" {"}</span></div> <br/>
+      <div style={{float:"left"}} ><span className="c-accent">Developer developer</span> <span className="c-pink">= new</span> <span className="c-accent">Developer</span><span className="c-muted">{" {"}</span></div> <br/>
       <div style={{float:"left"}} className="indent"><span className="c-green">"Justin Too"</span><span className="c-muted">,</span><span className="c-muted indent" > // name</span></div><br/>
       <div style={{float:"left"}} className="indent"><span className="c-green">"Building Things"</span><span className="c-muted">,</span><span className="c-muted indent">// passion</span></div><br/>
-      <div style={{float:"left"}} className="indent"><span className="c-green">true</span><span className="c-muted">,</span><span className="c-muted indent">// coffee</span></div><br/>
+      <div style={{float:"left"}} className="indent"><span className="c-orange">true</span><span className="c-muted">,</span><span className="c-muted indent">// coffee</span></div><br/>
       <div style={{float:"left"}} ><span className="c-muted">{"}"}</span><span className="c-muted">;</span></div>
-    </div>
+    </div><br/>
   </motion.div>
 );
 
