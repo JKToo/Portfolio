@@ -26,7 +26,7 @@ const Frameworks = ["React", "Ruby on Rails", "Express", "Material UI"]
 function Skills() {
   return (
 
-    <div style={{ paddingBottom:"8%", paddingTop:"8%" }} className="bodyStyle">
+    <div style={{ paddingBottom:"8%", paddingTop:"8%" }} className="bodyStyle alt-section">
 
       <div>
         <div style={{ display: "flex"}}>

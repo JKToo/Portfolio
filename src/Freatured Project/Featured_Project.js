@@ -12,7 +12,7 @@ import Project_Status from "./Project_Status"
 
 function Featured_Project() {
   return (
-    <div style={{ paddingBottom: "8%", paddingTop: "2%" }}>
+    <div style={{ paddingBottom: "8%", paddingTop: "2%" }} className="alt-section">
       <h1>Featured Project</h1>
 
       <Grid container justifyContent="center" spacing={2} style={{ width: "100%", paddingBottom:"50px" }}>

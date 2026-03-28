@@ -27,12 +27,6 @@ function About() {
               </p>
               <p style={{ color: '#007FFF', fontSize: 40 }}>Here's what I know</p>
 
-
-              {/* <div className='leftPaneAbout' style={{paddingTop: 70, marginRight:50, fontFamily: "Poppins"}}>
-        I currently attend CUNY Hunter College, pursuing a <br></br>Bachelors in Arts Degree in Computer Science. <br></br>
-        I have a love for technology and hope <br></br>to one day make a difference through it.<br></br>
-        I'm passionate about what I do, and have knowledge in <br></br>Web Development, iOS / Android Development, and Programming
-        </div> */}
               <div data-aos="fade-up" >
                 <Card style={{ paddingLeft: "10px", paddingRight: "10px", boxShadow: "3px 3px 3px #888888" }}>
                   <div>

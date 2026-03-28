@@ -2,24 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-/* ── CSS Variables ── */
-:root {
-  --bg:              hsl(220, 20%, 4%);
-  --fg:              hsl(210, 20%, 92%);
-  --primary:         hsl(175, 80%, 50%);
-  --accent:          hsl(280, 70%, 60%);
-  --pink:          hsl(302, 85%, 70%);
-  --green:           hsl(142, 70%, 55%);
-  --yellow:          hsl(45, 90%, 60%);
-  --orange:          hsl(32, 90%, 60%);
-  --muted:           hsl(215, 12%, 50%);
-  --card-bg:         hsl(220, 18%, 8%);
-  --border:          hsl(220, 14%, 16%);
-  --secondary-bg:    hsl(220, 16%, 14%);
-  --destructive:     hsl(0, 70%, 55%);
-  --font-display:    'Space Grotesk', sans-serif;
-  --font-mono:       'JetBrains Mono', monospace;
-}
 
 .home-section {
   position: relative;
