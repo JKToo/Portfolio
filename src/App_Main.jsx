@@ -5,6 +5,7 @@ import AboutSection from "./About_Section";
 import ProjectsSection from "./ProjectSection";
 import SkillsSection from "./Skill_Section";
 import FeaturedProject from "./Featured Project/FeaturedProject_Section";
+import NavBar from "./components/NavBar";
 import Certificates from "./Certificates"
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
@@ -13,7 +14,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./index.css";
 import Footer from "./Footer"
-import Burger from "./components/Burger";
 const { Octokit } = require("@octokit/core");
 
 function AppSecond() {
@@ -29,8 +29,8 @@ function AppSecond() {
         <Router>
             <div className="App main-section">
                 <div id="home"></div>
+                    <NavBar/>
                 <AnimatePresence>
-                    <Burger/>
                     <div className="credits">
                         The MIT License (MIT)
 
