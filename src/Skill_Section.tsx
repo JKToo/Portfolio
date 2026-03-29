@@ -5,8 +5,8 @@ import LayersIcon from '@mui/icons-material/Layers';
 
 
 const Languages = ["Java", "C++", "Python", "HTML", "Javascript", "Ruby", "PHP", "CSS", "Swift", "SQL"];
-const Tools = ["Git", "VSCode", "Visual Studio", "Android Studio", "Xcode", "Netlify", "MySQL", "MongoDB", "PhpMyAdmin", "Postgres", "PowerShell", "Linux", "Figma", "Active Directory", "Sharepoint", "RMM", "MDM", "Azure", "Intune"];
-const Frameworks = ["React", "Ruby on Rails", "Express", "Material UI"];
+const Tools = ["Git", "VSCode", "Visual Studio", "Android Studio", "Xcode", "Netlify", "MySQL", "MongoDB", "PhpMyAdmin", "Postgres", "PowerShell", "RDP", "Windows", "Mac", "Linux", "Figma", "Active Directory", "Sharepoint", "Azure", "Intune", "Nagios", "Zabbix", "vSphere", "SentinelOne", "NinjaOne"];
+const Frameworks = ["React", "Ruby on Rails", "Express", "Material UI", "Android SDK"];
 
 const categories = [
   { title: "Languages", icon: CodeIcon, items: Languages, command: "ls ~/skills/languages" },

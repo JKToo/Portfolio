@@ -25,8 +25,9 @@ function AppSecond() {
     $(window).on('scroll', function () {
         lZone.css('margin-top', $(document).scrollTop() + 100);
     });
+    
     return (
-        <Router>
+        <Router >
             <div className="App main-section">
                 <div id="home"></div>
                     <NavBar/>
@@ -110,7 +111,7 @@ function AppSecond() {
 
                             <div data-aos="fade-up" id="skills">
 
-                                <SkillsSection />
+                                <SkillsSection/>
                                 <div data-aos="fade-up" style={{ paddingBottom: 0 }}>
                                 </div>
                             </div>

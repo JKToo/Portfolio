@@ -23,16 +23,27 @@
   --font-display:    'Space Grotesk', sans-serif;
   --font-mono:       'JetBrains Mono', monospace;
 }
+body {
+  background-image:
+    linear-gradient(hsla(175, 80%, 50%, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsla(175, 80%, 50%, 0.03) 1px, transparent 1px);
+}
 
+.app-home-bg {
+  background-color: var(--bg);
+
+  background-image:
+    linear-gradient(hsla(175, 80%, 50%, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsla(175, 80%, 50%, 0.03) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
 
 .main-section {
   position: relative;
   padding: 6rem 0;
   overflow: hidden;
   background-color: var(--bg);
-  background-image:
-    linear-gradient(hsla(175, 80%, 50%, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, hsla(175, 80%, 50%, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 

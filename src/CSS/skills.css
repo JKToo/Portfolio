@@ -4,9 +4,9 @@
   padding: 6rem 0;
   overflow: hidden;
   background-color: var(--bg);
-  background-image:
+  /* background-image:
     linear-gradient(hsla(175, 80%, 50%, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, hsla(175, 80%, 50%, 0.03) 1px, transparent 1px);
+    linear-gradient(90deg, hsla(175, 80%, 50%, 0.03) 1px, transparent 1px); */
   background-size: 60px 60px;
 }
 
