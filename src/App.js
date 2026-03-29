@@ -4,7 +4,7 @@ import Home from "./Nav_Home";
 import About from "./Nav_About_Skills";
 import Projects from "./Nav_Projects"
 import Skills from "./Nav_Skills"
-import Landing from "./components/Landing"
+import Landing from "./components/Landing.tsx"
 import App_Home from "./App_Main"
 import Certificates from "./Certificates"
 import Side from "./About_InfoCards"
@@ -26,12 +26,12 @@ function App() {
     useEffect(()=>{
         setInterval(() => {
             setShowComponent(!showComponent);
-        }, 3000);
+        }, 5000);
     }, []);
     useEffect(()=>{
         setInterval(() => {
             setShowLanding(!showLanding);
-        }, 3000);
+        }, 5000);
     }, []);
     return (
         <>
