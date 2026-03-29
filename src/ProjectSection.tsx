@@ -65,7 +65,7 @@ const projects = [
     date: "September 26, 2021",
     description:
       "Multi-functional utility tool offering various calculators and unit conversions within a single, streamlined interface for everyday problem solving.",
-    tech: ["JavaScript", "HTML", "CSS"],
+    tech: ["Java", "Android Studio", "XML", "Gradle"],
     link: "",
   },
   {

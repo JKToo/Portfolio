@@ -111,7 +111,7 @@ const FeaturedProject = () => {
               <TerminalCard path="~/projects/omni-tool/stack.json">
                 <div className="space-y-3">
                   <p className="font-mono text-xs text-muted-foreground">
-                    <span className="text-terminal-green">$</span> jq '.technologies' stack.json
+                    <span className="text-terminal-green c-green">$</span> jq '.technologies' stack.json
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {techStack.map((tech) => (

@@ -1,46 +1,198 @@
-body{
+/* ── Skills Section ── */
+.skills-section {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(hsla(175, 80%, 50%, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsla(175, 80%, 50%, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
 
-.bodyStyle{
-    background:#3b444b;
-    font-family: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
+
+.skills-section .corner-tl {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-left: 2px solid hsla(175, 80%, 50%, 0.1);
+  border-top: 2px solid hsla(175, 80%, 50%, 0.1);
 }
 
-.header{
-    display:flex;
+.skills-section .corner-br {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-right: 2px solid hsla(175, 80%, 50%, 0.1);
+  border-bottom: 2px solid hsla(175, 80%, 50%, 0.1);
 }
 
-.categories{
-    color: #FFF;
-    text-align:left; 
-    font-size: 35px;
-    margin-left:15%;
+.skills-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 10;
 }
 
-.gridLayout{
-    justify-content: center;
-    width: 100%;
-    margin-left: 50px;
+/* Section header */
+.skills-section .section-header {
+  margin-bottom: 4rem;
 }
 
-.description{
-    font-family: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    color:#FFF;
-    background: linear-gradient(to right bottom, rgb(0, 127, 255), rgb(0, 89, 178)) 120% center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 9px;
-    font-size: 20px;
-    border-radius: 20px;
-
+.skills-section .terminal-prompt {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
 }
 
-@media screen and (max-width: 400px){
-	/* Mobile Responsiveness CSS here */
-	.gridLayout{
-        width: 100%;
-        float: left;
-    }
+.skills-section .prompt-arrow {
+  color: var(--green);
+}
+
+.skills-section .prompt-tilde {
+  color: var(--primary);
+}
+
+.skills-section .section-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--fg);
+  letter-spacing: -0.025em;
+}
+
+.skills-section .section-title .text-glow {
+  color: var(--primary);
+  text-shadow: 0 0 20px hsla(175, 80%, 50%, 0.5), 0 0 40px hsla(175, 80%, 50%, 0.2);
+}
+
+/* Category cards */
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.category-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px hsla(175, 80%, 50%, 0.15), inset 0 0 15px hsla(175, 80%, 50%, 0.05);
+}
+
+.category-card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: hsla(220, 16%, 14%, 0.5);
+  border-bottom: 1px solid var(--border);
+}
+
+.category-card .dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.category-card .dot.red    { background: hsla(0, 84%, 60%, 0.7); }
+.category-card .dot.yellow { background: hsla(45, 100%, 50%, 0.7); }
+.category-card .dot.green  { background: hsla(142, 70%, 55%, 0.7); }
+
+.category-card .card-path {
+  margin-left: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.category-card .card-body {
+  padding: 1.5rem;
+}
+
+.category-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.category-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary);
+}
+
+.category-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.item-count {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.command-line {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.prompt-dollar {
+  color: var(--green);
+}
+
+/* Skill chips */
+.chips-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-chip {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  background: var(--card-alt, hsla(220, 16%, 14%, 1));
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--fg);
+  cursor: default;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.skill-chip:hover {
+  border-color: hsla(175, 80%, 50%, 0.5);
+  color: var(--primary);
+}
+
+.scan-complete {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--green);
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .skills-section .section-title {
+    font-size: 3rem;
+  }
 }
