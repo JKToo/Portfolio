@@ -69,6 +69,7 @@
 
 .home-name-glow {
   color: var(--primary);
+  font-size: 50px;
   text-shadow: 0 0 20px hsla(175, 80%, 50%, 0.5), 0 0 40px hsla(175, 80%, 50%, 0.2);
 }
 

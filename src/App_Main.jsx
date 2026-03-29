@@ -4,7 +4,8 @@ import Home from "./Nav_Home";
 import AboutSection from "./About_Section";
 import ProjectsSection from "./ProjectSection";
 import Skills from "./Nav_Skills"
-import Featured_Project from "./Freatured Project/Featured_Project"
+import Featured_Project from "./Featured Project/Featured_Project"
+import FeaturedProject from "./Featured Project/FeaturedProject_Section";
 import Certificates from "./Certificates"
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
@@ -120,7 +121,7 @@ function AppSecond() {
                                 </div>
                             </div>
                             <div data-aos="fade-up" id="about">
-                                <Featured_Project />
+                                <FeaturedProject />
                                 <div data-aos="fade-up" style={{ paddingBottom: 0 }}>
                                 </div>
                             </div>
