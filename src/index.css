@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* ── CSS Variables ── */
 :root {
   --bg:              hsl(220, 20%, 4%);

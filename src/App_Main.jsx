@@ -125,7 +125,7 @@ function AppSecond() {
                                 </div>
                             </div>
 
-                            <div style={{ paddingTop: 200, paddingBottom: 50 }} data-aos="fade-up" id="projects">
+                            <div style={{  paddingBottom: 50 }} data-aos="fade-up" id="projects">
                                 {/* <Projects /> */}
                                 <ProjectsSection/>
                             </div>

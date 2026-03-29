@@ -35,13 +35,13 @@ function App() {
     }, []);
     return (
         <>
-        <div>
+        <div >
         {/* <Landing/> */}
 
             <AnimatePresence>
             {showLanding && <Landing/>}
             <div  data-aos="fade-up" > 
-            {showComponent && <App_Home/>}
+            {showComponent && <App_Home />}
             </div>
             </AnimatePresence>
         </div>
