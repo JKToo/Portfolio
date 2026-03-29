@@ -6,7 +6,8 @@ import "./CSS/projects.css";
 const projects = [
   {
     title: "Campus Cravings",
-    date: "December 12, 2024",
+    date: "2024-12-12",
+    displayDate: "December 12, 2024",
     description:
       "Full-stack delivery web-based platform connecting students with local food options, allowing users to place orders while enabling others to earn income as campus-based drivers.",
     tech: ["Rails", "Ruby", "Postgres", "CSS", "HTML"],
@@ -14,15 +15,27 @@ const projects = [
   },
   {
     title: "Virtual Reception",
-    date: "February, 2023",
+    date: "2023-02-01",
+    displayDate: "February, 2023",
     description:
       "An automated web-based receptionist that streamlines check-in operations, reducing wait times and enhancing overall efficiency. It features customizable workflows and interactive interfaces for smooth guest management.",
     tech: ["ReactJS", "Figma", "Material UI", "Firebase"],
     link: "",
   },
   {
+    title: "Inventory Check",
+    date: "2022-10-05",
+    displayDate: "October, 2022",
+    description:
+      "A utility that extracts records from our RMM system to verify and update documented inventory",
+    tech: ["Java", "RMM", "API"],
+    link: "",
+  },
+
+  {
     title: "Pluvio",
-    date: "December 1, 2022",
+    date: "2022-12-01",
+    displayDate: "December 1, 2022",
     description:
       "Social media platform centered around movies, featuring user profiles, reviews, and an AI-powered recommendation system to personalize content discovery.",
     tech: ["MongoDB", "Express", "React", "NodeJS", "Jupyter"],
@@ -30,7 +43,8 @@ const projects = [
   },
   {
     title: "First Come First Serve",
-    date: "August 25, 2020",
+    date: "2020-08-25",
+    displayDate: "August 25, 2020",
     description:
       "Client-focused web development project where I led a team, gathered requirements through direct interviews, and delivered a tailored website solution based on business needs.",
     tech: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
@@ -38,7 +52,8 @@ const projects = [
   },
   {
     title: "Study Peer",
-    date: "September 5, 2021",
+    date: "2021-09-05",
+    displayDate: "September 5, 2021",
     description:
       "Interactive Discord bot designed to assist with studying, offering language translation, quizzes, and automated learning tools through API integrations.",
     tech: ["Python", "REST API"],
@@ -46,7 +61,8 @@ const projects = [
   },
   {
     title: "Portfolio Website",
-    date: "April, 2020",
+    date: "2020-04-01",
+    displayDate: "April, 2020",
     description:
       "Personal portfolio website built with React, showcasing projects, skills, and experience with a focus on responsive design and modern UI/UX.",
     tech: ["HTML", "CSS", "Javascript", "React", "Tailwind"],
@@ -54,7 +70,8 @@ const projects = [
   },
   {
     title: "Cooking101",
-    date: "February, 2022",
+    date: "2022-02-01",
+    displayDate: "February, 2022",
     description:
       "Recipe-sharing platform where users can browse, upload, and follow step-by-step cooking guides, with a focus on user-friendly navigation and content organization.",
     tech: ["React", "Node.js", "MongoDB"],
@@ -62,7 +79,8 @@ const projects = [
   },
   {
     title: "ZuKit",
-    date: "September 26, 2021",
+    date: "2021-09-26",
+    displayDate: "September 26, 2021",
     description:
       "Multi-functional utility tool offering various calculators and unit conversions within a single, streamlined interface for everyday problem solving.",
     tech: ["Java", "Android Studio", "XML", "Gradle"],
@@ -70,15 +88,26 @@ const projects = [
   },
   {
     title: "Quizlet API",
-    date: "May 3, 2022",
+    date: "2022-05-03",
+    displayDate: "May 3, 2022",
     description:
       "Integrated Quizlet’s API to build a flashcard-based learning system, enabling users to access, create, and study sets programmatically.",
     tech: ["Python", "REST API"],
     link: "https://github.com/JKToo/Quizlet_API",
   },
   {
+    title: "Easy Rental",
+    date: "2022-8-18",
+    displayDate: "August 18, 2022",
+    description:
+      "Relational database project to streamline car rental operations. Helps businesses efficiently manage vehicle and customer information, track rentals, and quickly check vehicle availability",
+    tech: ["MySQL", "Linux"],
+    link: "https://github.com/JKToo/EasyRental",
+  },
+  {
     title: "Hexadecimal Calculator",
-    date: "October 3, 2022",
+    date: "2022-10-03",
+    displayDate: "October 3, 2022",
     description:
       "Web-based calculator supporting hexadecimal arithmetic, designed to simplify base-16 operations for developers and students.",
     tech: ["JavaScript", "HTML", "CSS"],
@@ -86,7 +115,8 @@ const projects = [
   },
   {
     title: "Tic Tac Toe",
-    date: "November 7, 2022",
+    date: "2022-11-07",
+    displayDate: "November 7, 2022",
     description:
       "Classic Tic Tac Toe game featuring an AI opponent with basic decision-making logic, providing an interactive and responsive gameplay experience.",
     tech: ["JavaScript", "HTML", "CSS"],
@@ -105,6 +135,9 @@ const itemVariants = {
 };
 
 const ProjectsSection = () => {
+  const sortedProjects = [...projects].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
   return (
     <section className="relative py-24 overflow-hidden grid-bg projects-section">
       {/* <FloatingShapes /> */}
@@ -139,7 +172,7 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 projects-grid"
         >
-          {projects.map((project) => (
+          {sortedProjects.map((project) => (
             <a key={project.title} href={project.link} target="_blank">
               <motion.div
                 key={project.title}
@@ -164,7 +197,7 @@ const ProjectsSection = () => {
                       {project.title}
                     </h3>
                     <p className="text-xs font-mono text-muted-foreground mt-1">
-                      {project.date}
+                      {project.displayDate}
                     </p>
                     <p className="text-sm text-muted-foreground leading-relaxed text-left mt-2">
                       {project.description}
