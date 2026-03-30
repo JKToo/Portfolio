@@ -1,31 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.background{
-    background: url(../Sources/windowsblur.jpg) no-repeat center center fixed;
-  background-size: "cover";
-  height: 100vh;
-  background-repeat:no-repeat; 
-}
+@layer components {
+  .login-theme {
+    --background: 220 20% 10%;
+    --foreground: 0 0% 95%;
 
-.input{
-    width: 30px;
-    float:right;
-    margin-top:-4.4px;
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+    --card: 220 20% 14%;
+    --card-foreground: 0 0% 95%;
 
-.user{
-    width: 50px;
-    border-radius: 30px;
-}
-.userLogo{
-    width: 180px;
-    border-radius: 100px;
-    margin-left: 35px;
-    margin-bottom: -40px;
-}
+    --primary: 220 80% 60%;
+    --primary-foreground: 0 0% 100%;
 
-.icons{
-    width: 25px;
+    --muted: 220 10% 20%;
+    --muted-foreground: 220 10% 55%;
+
+    /* …all other variables… */
+    --login-glass: 220 20% 8%;
+    --login-glass-border: 220 20% 25%;
+    --login-input-bg: 220 20% 12%;
+  }
+
+  .login-theme * {
+    @apply border-border;
+  }
+
+  .login-theme body {
+    @apply bg-background text-foreground;
+  }
 }
