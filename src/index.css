@@ -1,58 +1,55 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 210 20% 98%;
-    --foreground: 220 25% 10%;
-    --card: 0 0% 100%;
-    --card-foreground: 220 25% 10%;
-    --primary: 173 58% 39%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 210 20% 94%;
-    --secondary-foreground: 220 25% 20%;
-    --muted: 210 15% 93%;
-    --muted-foreground: 220 10% 46%;
-    --border: 214 20% 88%;
-    --ring: 173 58% 39%;
-    --radius: 0.75rem;
-
-    --timeline-line: 173 40% 80%;
-    --timeline-dot: 173 58% 39%;
-    --timeline-dot-ring: 173 58% 39%;
-  }
-
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
+/* ── CSS Variables ── */
+:root {
+  --bg:              hsl(220, 20%, 4%);
+  --bg2:             hsl(210, 30%, 12%);
+  --fg:              hsl(210, 20%, 92%);
+  --primary:         hsl(175, 80%, 50%);
+  --accent:          hsl(280, 70%, 60%);
+  --pink:          hsl(302, 85%, 70%);
+  --green:           hsl(142, 70%, 55%);
+  --yellow:          hsl(45, 90%, 60%);
+  --orange:          hsl(32, 90%, 60%);
+  --muted:           hsl(215, 12%, 50%);
+  --card-bg:         hsl(220, 18%, 8%);
+  --border:          hsl(220, 14%, 16%);
+  --secondary-bg:    hsl(220, 16%, 14%);
+  --destructive:     hsl(0, 70%, 55%);
+  --font-display:    'Space Grotesk', sans-serif;
+  --font-mono:       'JetBrains Mono', monospace;
+}
+body {
+  background-image:
+    linear-gradient(hsla(175, 80%, 50%, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsla(175, 80%, 50%, 0.03) 1px, transparent 1px);
 }
 
-@layer utilities {
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+.app-home-bg {
+  background-color: var(--bg);
 
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
+  background-image:
+    linear-gradient(hsla(175, 80%, 50%, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, hsla(175, 80%, 50%, 0.03) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+.main-section {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+  background-color: var(--bg);
+  background-size: 60px 60px;
+}
+
+.alt-section {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+  background-color: var(--bg2);
+  background-size: 60px 60px;
 }

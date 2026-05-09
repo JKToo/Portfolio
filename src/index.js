@@ -11,6 +11,7 @@ import './CSS/landing.css'
 import './CSS/side.css'
 import {BrowserRouter} from 'react-router-dom'
 import $ from 'jquery';
+import './index.css';
 //import reportWebVitals from './reportWebVitals';
 
 var lZone = $('.left-zone');
@@ -22,6 +23,7 @@ $(window).on('scroll', function() {
 
 ReactDOM.render(
    <BrowserRouter>
+   {/* <p className="text-red-500 text-3xl font-bold">If you see this in red, Tailwind works!</p> */}
     <App/>
     </BrowserRouter>, 
     document.getElementById('root')

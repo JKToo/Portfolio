@@ -12,7 +12,7 @@ const socialLinks = [
   { icon: <EmailIcon sx={{ fontSize: 20 }} />, href: "mailto:justinktoo1998@gmail.com", label: "Email" },
 ];
 
-const techStack = ["React", "TypeScript", "Material UI", "Framer Motion"];
+const techStack = ["React", "TypeScript", "Material UI", "Framer Motion", "Tailwind"];
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -71,8 +71,7 @@ const Footer = () => {
           </div>
 
           <p className="footer-copyright">
-            © {currentYear} — Made with
-            <FavoriteIcon sx={{ fontSize: 12 }} className="footer-heart" />
+            © {currentYear} 
           </p>
         </motion.div>
       </div>
