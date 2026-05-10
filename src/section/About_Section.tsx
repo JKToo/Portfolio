@@ -34,7 +34,6 @@ const AboutSection = () => {
       <div className="absolute bottom-8 right-8 w-12 h-12 border-r-2 border-b-2 border-primary/10" />
 
       <div className="max-w-6xl mx-auto relative z-10 px-6">
-        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -53,9 +52,8 @@ const AboutSection = () => {
           </h2>
         </motion.div>
 
-        {/* Two-column grid */}
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left — Profile card */}
+
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -120,7 +118,6 @@ const AboutSection = () => {
             </motion.div>
           </motion.div>
 
-                    {/* Right — Skills Card */}
          <GitLogTimeline/>
 
         </div>

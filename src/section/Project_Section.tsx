@@ -20,7 +20,7 @@ const projects = [
     description:
       "An automated web-based receptionist that streamlines check-in operations, reducing wait times and enhancing overall efficiency. It features customizable workflows and interactive interfaces for smooth guest management.",
     tech: ["ReactJS", "Figma", "Material UI", "Firebase"],
-    link: "",
+    link: undefined,
   },
   {
     title: "Inventory Check",
@@ -29,7 +29,7 @@ const projects = [
     description:
       "A utility that extracts records from our RMM system to verify and update documented inventory",
     tech: ["Java", "RMM", "API"],
-    link: "",
+    link: undefined,
   },
 
   {
@@ -84,7 +84,7 @@ const projects = [
     description:
       "Multi-functional utility tool offering various calculators and unit conversions within a single, streamlined interface for everyday problem solving.",
     tech: ["Java", "Android Studio", "XML", "Gradle"],
-    link: "",
+    link: undefined,
   },
   {
     title: "Quizlet API",
@@ -136,16 +136,14 @@ const itemVariants = {
 
 const ProjectsSection = () => {
   const sortedProjects = [...projects].sort(
-  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-);
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
   return (
     <section className="relative py-24 overflow-hidden grid-bg projects-section">
-      {/* <FloatingShapes /> */}
       <div className="absolute top-8 left-8 w-12 h-12 border-l-2 border-t-2 border-primary/10" />
       <div className="absolute bottom-8 right-8 w-12 h-12 border-r-2 border-b-2 border-primary/10" />
 
       <div className="container relative z-10 px-6 projects-container">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -164,7 +162,6 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        {/* Project grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -177,9 +174,10 @@ const ProjectsSection = () => {
               <motion.div
                 key={project.title}
                 variants={itemVariants}
-                className="h-full project-card group bg-card border border-border rounded-lg overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.1)] flex flex-col"
-              >
-                {/* Terminal header */}
+                className={`h-full project-card group bg-card border border-border rounded-lg overflow-hidden transition-all duration-300 flex flex-col ${project.link
+                    ? "hover:border-primary/40 hover:shadow-[0_0_20px_hsl(var(--primary)/0.1)] cursor-pointer"
+                    : "cursor-default"
+                  }`}>
                 <div className="flex items-center gap-2 px-4 py-2.5 bg-secondary/50 border-b border-border">
                   <div className="w-2.5 h-2.5 rounded-full bg-destructive/70" />
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
@@ -190,7 +188,6 @@ const ProjectsSection = () => {
                   </span>
                 </div>
 
-                {/* Card content */}
                 <div className="p-5 space-y-4 flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-lg font-bold font-display text-primary group-hover:text-glow transition-all">
@@ -204,7 +201,6 @@ const ProjectsSection = () => {
                     </p>
                   </div>
 
-                  {/* Divider + tech stack at bottom */}
                   <div>
                     <div className="h-px bg-border my-2" />
                     <p className="text-xs font-mono text-muted-foreground mb-2">
