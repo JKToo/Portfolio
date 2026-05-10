@@ -43,7 +43,6 @@ const CertificatesSection = () => {
             <div className="absolute bottom-8 right-8 w-12 h-12 border-r-2 border-b-2 border-primary/10" />
 
             <div className="max-w-3xl mx-auto px-6 relative z-10">
-                {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -62,7 +61,6 @@ const CertificatesSection = () => {
                     </h2>
                 </motion.div>
 
-                {/* Carousel */}
                 <div className="relative">
                     <AnimatePresence exitBeforeEnter>
                         <motion.div
@@ -129,7 +127,6 @@ const CertificatesSection = () => {
                         </motion.div>
                     </AnimatePresence>
 
-                    {/* Navigation */}
                     <div className="flex items-center justify-center gap-6 mt-8">
                         <button
                             onClick={prev}

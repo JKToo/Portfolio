@@ -60,14 +60,14 @@ const FeaturedProject = () => {
             className="lg:col-span-3 space-y-6"
           >
             <motion.div variants={itemVariants}>
-              <TerminalCard path="~/projects/omni-tool">
+              <TerminalCard path="~/projects/zukit">
                 <div className="space-y-6">
                   <div>
                     <p className="font-mono text-xs text-muted-foreground mb-2">
                       <span className="text-terminal-green">$</span> cat README.md
                     </p>
                     <h2 className="text-3xl font-bold font-display text-foreground mb-2">
-                      Omni Tool
+                      ZuKit
                     </h2>
                     <p className="text-muted-foreground leading-relaxed">
                       A <span className="text-primary font-semibold">versatile</span> all-in-one
@@ -91,7 +91,7 @@ const FeaturedProject = () => {
 
                   <div className="flex gap-3 flex-wrap">
                     <a
-                      href="#"
+                      href="https://play.google.com/store/apps/details?id=com.zukit.dev.tools&hl=en_US" target="_blank"
                       className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground font-mono text-sm font-medium hover:bg-primary/90 transition-colors"
                     >
                       <LinkIcon className="w-4 h-4" /> Store Page
@@ -108,7 +108,7 @@ const FeaturedProject = () => {
             </motion.div>
 
             <motion.div variants={itemVariants}>
-              <TerminalCard path="~/projects/omni-tool/stack.json">
+              <TerminalCard path="~/projects/zukit/stack.json">
                 <div className="space-y-3">
                   <p className="font-mono text-xs text-muted-foreground">
                     <span className="text-terminal-green c-green">$</span> jq '.technologies' stack.json
