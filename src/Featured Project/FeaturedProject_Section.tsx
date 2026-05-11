@@ -3,6 +3,7 @@ import TerminalCard from "./TerminalCard";
 import PhoneMockup from "./PhoneMockup";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
+import ShopIcon from '@mui/icons-material/Shop';
 import LayersIcon from '@mui/icons-material/Layers';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import BoltIcon from '@mui/icons-material/Bolt';
@@ -94,7 +95,7 @@ const FeaturedProject = () => {
                       href="https://play.google.com/store/apps/details?id=com.zukit.dev.tools&hl=en_US" target="_blank"
                       className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground font-mono text-sm font-medium hover:bg-primary/90 transition-colors"
                     >
-                      <LinkIcon className="w-4 h-4" /> Store Page
+                      <ShopIcon className="w-4 h-4" /> Google Play
                     </a>
                     {/* <a
                       href="#"
