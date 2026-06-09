@@ -5,6 +5,14 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 const certificates = [
+     {
+        title: "Security+ (SY0-701)",
+        issuer: "CompTIA",
+        date: "May 2026",
+        description: "Foundational knowledge of risk management, threat mitigation, and core cybersecurity protocols",
+        credentialId: "d4246267a41b4322be9edc7642efc236",
+        link: "https://www.credly.com/earner/earned/badge/5b457ec3-21a6-4885-ac2e-e92d387b29e9",
+    },
     {
         title: "Python 101 for Data Science",
         issuer: "Cognitiveclass",

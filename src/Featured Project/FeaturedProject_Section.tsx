@@ -4,6 +4,7 @@ import PhoneMockup from "./PhoneMockup";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 import ShopIcon from '@mui/icons-material/Shop';
+import AppleIcon from '@mui/icons-material/Apple';
 import LayersIcon from '@mui/icons-material/Layers';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import BoltIcon from '@mui/icons-material/Bolt';
@@ -97,12 +98,12 @@ const FeaturedProject = () => {
                     >
                       <ShopIcon className="w-4 h-4" /> Google Play
                     </a>
-                    {/* <a
-                      href="#"
-                      className="flex items-center gap-2 px-4 py-2 rounded-md bg-secondary border border-border font-mono text-sm text-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                      <a
+                      href="https://apps.apple.com/us/app/zukit/id6772559292" target="_blank"
+                      className="flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground font-mono text-sm font-medium hover:bg-primary/90 transition-colors"
                     >
-                      <GitHubIcon className="w-4 h-4" /> Source Code
-                    </a> */}
+                      <AppleIcon className="w-4 h-4" /> App Store
+                    </a>
                   </div>
                 </div>
               </TerminalCard>
