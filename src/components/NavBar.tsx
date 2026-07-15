@@ -11,6 +11,7 @@ const navItems = [
   { label: "Home", href: "#home", cmd: "~" },
   { label: "Skills", href: "#skills", cmd: "~/skills" },
   { label: "About", href: "#about", cmd: "~/about" },
+  { label: "Certificates", href: "#certs", cmd: "~/certs" },
   { label: "Projects", href: "#projects", cmd: "~/projects" },
 ];
 
@@ -19,11 +20,20 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("Home");
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+useEffect(() => {
+    const handleNavbarSelect = (event: Event) => {
+        const customEvent = event as CustomEvent<string>;
+
+        setActiveItem(customEvent.detail);
+        setMobileOpen(false);
+    };
+
+    window.addEventListener("navbar-select", handleNavbarSelect);
+
+    return () => {
+        window.removeEventListener("navbar-select", handleNavbarSelect);
+    };
+}, []);
 
   const handleClick = (label: string) => {
     setActiveItem(label);

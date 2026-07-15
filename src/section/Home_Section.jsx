@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "../CSS/home.css";
 // import "./index.css"
 
-const roles = ["Cyber Security Analyst", "Cybersecurity Operations Center", "Security Engineer", "Systems Administrator"];
+const roles = ["Cyber Security Analyst", "Cybersecurity SOC", "Security Engineer", "Systems Administrator"];
 
 const TypingAnimation = () => {
   const [roleIndex, setRoleIndex] = useState(0);
