@@ -49,3 +49,36 @@ html, body{
     transform: rotate(360deg);
   }
 }
+.scroll-top-button {
+    position: fixed !important;
+    right: 24px !important;
+    bottom: 24px !important;
+    z-index: 2147483647 !important;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(34, 211, 238, 0.6);
+    border-radius: 10px;
+
+    background-color: #0f172a;
+    color: #22d3ee;
+
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(34, 211, 238, 0.3);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.scroll-top-button:hover {
+    transform: translateY(-4px);
+    background-color: #172033;
+    box-shadow: 0 0 24px rgba(34, 211, 238, 0.45);
+}
