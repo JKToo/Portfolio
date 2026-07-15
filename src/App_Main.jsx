@@ -118,7 +118,7 @@ function App_Main() {
                                 <AboutSection />
                             </div>
                             
-                            <div data-aos="fade-up" >
+                            <div data-aos="fade-up" style={{ paddingBottom: 0 }} id="certs">
                                 <CertificatesSection />
                             </div>
 
