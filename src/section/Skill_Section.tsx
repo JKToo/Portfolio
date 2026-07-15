@@ -1,15 +1,18 @@
 import { motion } from "framer-motion";
 import CodeIcon from '@mui/icons-material/Code';
 import BuildIcon from '@mui/icons-material/Build';
-import LayersIcon from '@mui/icons-material/Layers';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import ShieldIcon from '@mui/icons-material/Shield';import LayersIcon from '@mui/icons-material/Layers';
 import "../CSS/skills.css"
 
 const Languages = ["Java", "C++", "Python", "HTML", "Javascript", "Ruby", "PHP", "CSS", "Swift", "SQL"];
-const Tools = ["Git", "VSCode", "Visual Studio", "Android Studio", "Xcode", "Netlify", "MySQL", "MongoDB", "PhpMyAdmin", "Postgres", "PowerShell", "RDP", "Windows", "Mac", "Linux", "Figma", "Active Directory", "Sharepoint", "Azure", "Intune", "Nagios", "Zabbix", "vSphere", "SentinelOne", "NinjaOne"];
+const Security = ["SentinelOne EDR", "Cisco Secure Endpoint", "Endpoint Security", "Network Monitoring", "Security Monitoring", "Incident Response", "Access Control", "Threat Detection", "Vulnerability Management"];
+const Tools = ["Active Directory", "Sharepoint", "Microsoft Azure / Entra", "Microsoft Intune", "Nagios", "Zabbix", "vSphere", "NinjaOne RMM", "Cloud Infrastructure",  "Git", "VSCode", "Visual Studio", "Android Studio", "Xcode", "Netlify", "MySQL", "MongoDB", "PhpMyAdmin", "Postgres", "PowerShell", "RDP", "Windows", "Mac", "Linux", "Figma"];
 const Frameworks = ["React", "Ruby on Rails", "Express", "Material UI", "Android SDK"];
 
 const categories = [
   { title: "Languages", icon: CodeIcon, items: Languages, command: "ls ~/skills/languages" },
+  { title: "Security", icon: AdminPanelSettingsIcon, items: Security, command: "ls ~/skills/Security" },
   { title: "Tools", icon: BuildIcon, items: Tools, command: "ls ~/skills/tools" },
   { title: "Frameworks", icon: LayersIcon, items: Frameworks, command: "ls ~/skills/frameworks" },
 ];
